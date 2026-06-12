@@ -247,7 +247,7 @@ function openDetail(i,fly){
 const FB = D.feedback || null;
 const signed = n => (n>0?"+":"")+n;
 function reviewFormHTML(p){
-  return '<details class="review"><summary>✍️ I visited — leave a review</summary><div class="rev">'
+  return '<details class="review" open><summary>✍️ I visited — leave a review</summary><div class="rev">'
    +'<label>Rating<select id="rv-rating">'
      +'<option value="2">+2 · loved it</option><option value="1">+1 · liked it</option>'
      +'<option value="0" selected>0 · neutral</option><option value="-1">−1 · meh</option>'
