@@ -46,7 +46,11 @@ PRICE_CEILING = mid   # default max value_tier; "splurge" only when explicitly a
 - `data/places.json` — the growing list. Fields: id, name, type(restaurant|cafe), cuisine[],
   michelin, price, value_tier(everyday|mid|splurge), lat, lng, address, neighborhood, distance_km,
   vibe_tags[], michelin_dna_score(0–1), confidence(verified|candidate), source[], source_url,
-  last_verified, notes.
+  last_verified, notes. Provenance/merit trio (so a human knows why each place is here):
+  **why_listed** (its role in the value brief), **highlights[]** (the good parts, hand-distilled),
+  **added_via** (the pathway it entered: Michelin scrape / web seed / hunter search). why_listed and
+  added_via are formulaic — `scripts/annotate_provenance.mjs` re-derives them from
+  michelin/value_tier/source and is safe to re-run after the scraper or hunter adds rows.
 - `data/taste_profile.md` — the user's evolving taste vector + hard constraints. Source of truth
   for `taste_fit`. Re-derived from visits by the `taste-analyst` agent; also hand-editable.
 - `data/michelin_fingerprint.md` — "what good looks like," distilled from starred + Bib places.

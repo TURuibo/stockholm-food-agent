@@ -25,7 +25,14 @@
     "michelin_dna_score": 0.72,
     "confidence": "candidate",
     "inspector_note": "Famous for large, buttery pastries — a Sundbyberg fika staple. (approx coords)",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Large, buttery pastries it's locally famous for",
+      "A genuine Sundbyberg fika staple — ~100 m from home",
+      "Quiet neighbourhood-bakery feel"
+    ],
     "accepts_reservations": null,
+    "added_via": "Hand-seeded from 'best of Stockholm' web guides during the initial list build.",
     "source": [
       "web"
     ],
@@ -57,7 +64,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "candidate",
     "inspector_note": "Highly rated local Indian; great-value lunch, worth it in the evening too. (approx coords)",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Great-value lunch",
+      "Highly rated local Indian — good in the evening too",
+      "On your doorstep in Sundbyberg"
+    ],
     "accepts_reservations": null,
+    "added_via": "Hand-seeded from 'best of Stockholm' web guides during the initial list build.",
     "source": [
       "web"
     ],
@@ -90,7 +104,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "candidate",
     "inspector_note": "Top-rated Persian charcoal grill in Sundbyberg. (approx coords)",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Top-rated Persian charcoal grill in the area",
+      "Smoky, properly grilled kebabs",
+      "Everyday-priced, a short walk from home"
+    ],
     "accepts_reservations": null,
+    "added_via": "Hand-seeded from 'best of Stockholm' web guides during the initial list build.",
     "source": [
       "web"
     ],
@@ -126,7 +147,15 @@
     "michelin_dna_score": 0.62,
     "confidence": "candidate",
     "inspector_note": "Family-run konditori on Tulegatan since the 1950s; award-winning semlor many call the best in Stockholm. (approx coords)",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Family-run konditori on Tulegatan since the 1950s; award-winning semlor many call the best in Stockholm",
+      "fika",
+      "classic",
+      "neighbourhood"
+    ],
     "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
     "source": [
       "web-search"
     ],
@@ -162,7 +191,15 @@
     "michelin_dna_score": 0.3,
     "confidence": "candidate",
     "inspector_note": null,
+    "why_listed": "Neighbourhood keeper — a cozy everyday café near home, asked for by name. Here for proximity and sustained local love rather than craft pedigree (the second track in CLAUDE.md).",
+    "highlights": [
+      "Bread baked in-house every morning",
+      "Work-friendly living-room vibe",
+      "4.4/5 over 764 Google reviews",
+      "200 m from home in central Sundbyberg"
+    ],
     "accepts_reservations": null,
+    "added_via": "Added at the user's request after a why/why-not evaluation (neighbourhood-keeper track).",
     "source": [
       "web",
       "user-pick"
@@ -195,7 +232,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "candidate",
     "inspector_note": "Broad menu, attentive service — a family-friendly neighbourhood Italian. (approx coords)",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Broad, crowd-pleasing Italian menu",
+      "Attentive, family-friendly service",
+      "Cosy neighbourhood spot close to home"
+    ],
     "accepts_reservations": null,
+    "added_via": "Hand-seeded from 'best of Stockholm' web guides during the initial list build.",
     "source": [
       "web"
     ],
@@ -231,7 +275,15 @@
     "michelin_dna_score": 0.6,
     "confidence": "candidate",
     "inspector_note": "Sundbyberg konditori since 1941 — everything made from scratch in the basement bakery, first-class KRAV-certified ingredients. (approx coords)",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Sundbyberg konditori since 1941 — everything made from scratch in the basement bakery, first-class KRAV-certified ing…",
+      "fika",
+      "konditori",
+      "neighbourhood"
+    ],
     "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
     "source": [
       "web-search"
     ],
@@ -266,7 +318,15 @@
     "michelin_dna_score": 0.68,
     "confidence": "candidate",
     "inspector_note": "Organic stone-oven bakery in Sundbyberg — exclusively ecological flour, real butter and cream; nearly all bread from the historic stone oven. (approx coords)",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Organic stone-oven bakery in Sundbyberg — exclusively ecological flour, real butter and cream; nearly all bread from …",
+      "bakery",
+      "fika",
+      "neighbourhood"
+    ],
     "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
     "source": [
       "web-search"
     ],
@@ -301,7 +361,15 @@
     "michelin_dna_score": 0.35,
     "confidence": "candidate",
     "inspector_note": null,
+    "why_listed": "Neighbourhood keeper — a cozy everyday café near home, asked for by name. Here for proximity and sustained local love rather than craft pedigree (the second track in CLAUDE.md).",
+    "highlights": [
+      "From-scratch brunch — smoothie bowls, truffle scrambled eggs",
+      "Family-run, living-room cozy",
+      "4.4/5 over 446 Google reviews",
+      "~1.7 km away in Råsunda"
+    ],
     "accepts_reservations": null,
+    "added_via": "Added at the user's request after a why/why-not evaluation (neighbourhood-keeper track).",
     "source": [
       "web",
       "user-pick"
@@ -330,7 +398,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "Essence is the perfect spot for social types who like to mingle. Everyone is seated around a big counter and served at the same time, with Chef Stefan Taylor centre stage preparing the dishes and ...",
+    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted, but priced as a splurge; here as a 'what good looks like' reference more than an everyday pick.",
+    "highlights": [
+      "Communal counter — the whole room served in sync",
+      "Chef Stefan Taylor cooking centre-stage",
+      "Sociable, mingle-friendly fine dining"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -363,7 +438,14 @@
     "michelin_dna_score": 0.74,
     "confidence": "candidate",
     "inspector_note": "Decadent pastries; rumoured best cardamom bun in Stockholm. (approx coords)",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Rumoured best cardamom bun in Stockholm",
+      "Decadent, high-quality pastries",
+      "Destination-worthy neighbourhood bakery"
+    ],
     "accepts_reservations": null,
+    "added_via": "Hand-seeded from 'best of Stockholm' web guides during the initial list build.",
     "source": [
       "web"
     ],
@@ -391,7 +473,14 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "After travelling the world, two friends opened this restaurant to showcase their experiences through food, yet with a decidedly imaginative streak. The cooking is characterised by bold, surprising...",
+    "why_listed": "Michelin 1-star — seeds the 'what good looks like' fingerprint. A splurge benchmark, down-weighted by default so it doesn't crowd out the value cousins.",
+    "highlights": [
+      "Bold, surprising, well-travelled cooking",
+      "Imaginative one-star tasting experience",
+      "Personal, friends-run kitchen"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -425,7 +514,14 @@
     "michelin_dna_score": 0.7,
     "confidence": "candidate",
     "inspector_note": "Quintessential Swedish fika by Vasaparken, a café since the 1930s. (approx coords)",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Quintessential old-school Swedish fika",
+      "A café since the 1930s, by Vasaparken",
+      "Classic, calm konditori atmosphere"
+    ],
     "accepts_reservations": null,
+    "added_via": "Hand-seeded from 'best of Stockholm' web guides during the initial list build.",
     "source": [
       "web"
     ],
@@ -458,7 +554,14 @@
     "michelin_dna_score": 0.72,
     "confidence": "candidate",
     "inspector_note": "Well-loved café/bakery, calm room for coffee. (approx coords)",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Well-loved café and bakery in one",
+      "Calm room made for slow coffee",
+      "Quiet Kungsholmen fika"
+    ],
     "accepts_reservations": null,
+    "added_via": "Hand-seeded from 'best of Stockholm' web guides during the initial list build.",
     "source": [
       "web"
     ],
@@ -486,7 +589,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "There is a wonderfully personal touch to this well-run Vietnamese restaurant, with posters and old photos adorning the walls, and an array of objects decorating the room. It’s an enjoyably relaxed...",
+    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
+    "highlights": [
+      "Wonderfully personal, photo-filled room",
+      "Relaxed, well-run Vietnamese",
+      "On a budget — Michelin-listed value"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -514,7 +624,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "A stylish, red-brick former factory dating back to 1916, set beside the water, is home to this brasserie-style restaurant that has a welcome brightness to both its décor and its atmosphere. Local ...",
+    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
+    "highlights": [
+      "Bright brasserie in a 1916 red-brick factory",
+      "Waterside setting",
+      "Local, seasonal modern cooking"
+    ],
     "accepts_reservations": "Yes",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -542,7 +659,15 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "With its pared-back feel, rustic exposed brickwork and buzzy vibe, this is just the place for a lively night out. It remains one of the hottest tickets in town, so try for a counter seat ...",
+    "why_listed": "Bib Gourmand — Michelin's own good-value badge. This is the gold seed of the whole 'Michelin-adjacent value' idea: great cooking that won't break the bank.",
+    "highlights": [
+      "One of the hottest tickets in town",
+      "Buzzy, rustic exposed-brick room",
+      "Grab a counter seat for the action",
+      "Bib Gourmand value"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -576,7 +701,14 @@
     "michelin_dna_score": 0.78,
     "confidence": "candidate",
     "inspector_note": "Hand-brewed V60s, roasts its own beans — serious-coffee fika. (approx coords)",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Roasts its own beans",
+      "Hand-brewed V60 pour-overs",
+      "Serious-coffee destination for fika"
+    ],
     "accepts_reservations": null,
+    "added_via": "Hand-seeded from 'best of Stockholm' web guides during the initial list build.",
     "source": [
       "web"
     ],
@@ -611,7 +743,15 @@
     "michelin_dna_score": 0.7,
     "confidence": "candidate",
     "inspector_note": null,
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "House-made pasta and charcuterie",
+      "Playful, creative Italian",
+      "Pasta around 195–205 SEK",
+      "Inside the historic Clas på Hörnet"
+    ],
     "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
     "source": [
       "web-search"
     ],
@@ -647,7 +787,15 @@
     "michelin_dna_score": 0.72,
     "confidence": "candidate",
     "inspector_note": null,
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Gratinéed oysters with XO sauce",
+      "Fresh seafood small plates",
+      "Curated natural-wine list",
+      "Cosy all-wood counter"
+    ],
     "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
     "source": [
       "web-search"
     ],
@@ -675,7 +823,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "This pleasantly relaxed little neighbourhood restaurant is sleekly and stylishly decorated with a monochrome colour scheme. For its part, the kitchen produces accomplished dishes and boasts some ...",
+    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
+    "highlights": [
+      "Accomplished modern cooking",
+      "Relaxed, stylish monochrome room",
+      "Neighbourhood scale and feel"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -709,7 +864,15 @@
     "michelin_dna_score": 0.65,
     "confidence": "candidate",
     "inspector_note": null,
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Charred pulpo and whipped ricotta",
+      "Sharing-friendly Mediterranean",
+      "~350–450 SEK per person",
+      "Sunny southern-Med inspiration"
+    ],
     "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
     "source": [
       "web-search"
     ],
@@ -737,7 +900,14 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "With its white tiled walls and compact counter seating, this restaurant couldn't look simpler, but it is not a place to be underestimated. Classic Japanese sushi preparations soar to a high level ...",
+    "why_listed": "Michelin 1-star — seeds the 'what good looks like' fingerprint. A splurge benchmark, down-weighted by default so it doesn't crowd out the value cousins.",
+    "highlights": [
+      "Classic sushi at the highest level",
+      "Intimate tiled counter",
+      "One-star benchmark for the fingerprint"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -765,7 +935,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "You’re guaranteed a warm welcome at this sweetly run bohemian bistro. A communal table is at the heart of proceedings, but there are a few smaller tables and some counter seating available too. ...",
+    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
+    "highlights": [
+      "Warm, bohemian bistro welcome",
+      "Communal table at its heart",
+      "Relaxed counter seating"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -793,7 +970,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "There’s a slightly ‘underground’ feel to this small bistro, both figuratively and literally; you enter via a few steps down from street level, into a ‘half-cellar’ dining room where the windows ...",
+    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
+    "highlights": [
+      "Characterful half-cellar dining room",
+      "Budget-priced for a Michelin listing",
+      "Small, personal bistro"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -829,7 +1013,15 @@
     "michelin_dna_score": 0.82,
     "confidence": "candidate",
     "inspector_note": "Patisserie by world-class pastry chefs Bedros Kabranian and Frida Bäcke — voted Konditorernas Konditori every year since 2022; made dessert and bread for the 2024 Nobel dinner. (approx coords)",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Patisserie by world-class pastry chefs Bedros Kabranian and Frida Bäcke — voted Konditorernas Konditori every year si…",
+      "patisserie",
+      "chef-driven",
+      "craft"
+    ],
     "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
     "source": [
       "web-search"
     ],
@@ -857,7 +1049,15 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "Overseen by passionate chef-owner Johan Jureskog, this buzzy neighbourhood spot has been a staple of the Stockholm dining scene for nearly 40 years. The industrial-style décor comes courtesy of ...",
+    "why_listed": "Bib Gourmand — Michelin's own good-value badge. This is the gold seed of the whole 'Michelin-adjacent value' idea: great cooking that won't break the bank.",
+    "highlights": [
+      "A Stockholm staple for ~40 years",
+      "Chef-owner Johan Jureskog at the helm",
+      "Buzzy, industrial-design room",
+      "Bib Gourmand value"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -885,7 +1085,15 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "The very definition of a neighbourhood restaurant, Babette is a lively, bustling spot with a buzzing atmosphere; arrive expecting to squeeze past chairs without stepping on dogs and to sit ...",
+    "why_listed": "Bib Gourmand — Michelin's own good-value badge. This is the gold seed of the whole 'Michelin-adjacent value' idea: great cooking that won't break the bank.",
+    "highlights": [
+      "Lively, buzzing neighbourhood vibe",
+      "Known for pizzas and small plates",
+      "Budget-friendly Bib Gourmand",
+      "No-fuss, dog-friendly"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -913,7 +1121,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "The flavours of Southeast Asia are the inspiration behind this stylish restaurant and bar that occupies the building once home to the Stockholm Electric Company. The unusual front door harks back ...",
+    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
+    "highlights": [
+      "Bold Southeast-Asian flavours",
+      "Striking room in an old power-company building",
+      "Lively bar-and-restaurant energy"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -950,7 +1165,15 @@
     "michelin_dna_score": 0.85,
     "confidence": "candidate",
     "inspector_note": "Rye-bread bakery-café by two-star chef Mathias Dahlgren and Martin Berg — traditional techniques, organic grain, Swedish smörrebröd and soup lunch. (approx coords)",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Rye-bread bakery-café by two-star chef Mathias Dahlgren and Martin Berg — traditional techniques, organic grain, Swed…",
+      "bakery",
+      "chef-driven",
+      "rye"
+    ],
     "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
     "source": [
       "web-search"
     ],
@@ -978,7 +1201,15 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "With its lively atmosphere, classic Gallic menus and a long bar counter where 18 stools look into the open kitchen, Allegrine has something of a French brasserie style. Lunch is a simple affair ...",
+    "why_listed": "Bib Gourmand — Michelin's own good-value badge. This is the gold seed of the whole 'Michelin-adjacent value' idea: great cooking that won't break the bank.",
+    "highlights": [
+      "Classic French brasserie cooking",
+      "18-stool counter onto the open kitchen",
+      "Simple, great-value lunch",
+      "Bib Gourmand"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1006,7 +1237,14 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "Two chefs, one Swedish and one Australian, are behind this homage to Japanese cuisine which sports the uncluttered, pared-back décor common to both Nordic and Japanese restaurants. Prime Swedish ...",
+    "why_listed": "Michelin 1-star — seeds the 'what good looks like' fingerprint. A splurge benchmark, down-weighted by default so it doesn't crowd out the value cousins.",
+    "highlights": [
+      "Japanese technique on prime Swedish produce",
+      "Pared-back Nordic-Japanese room",
+      "One-star tasting experience"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1034,7 +1272,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "In a neighbourhood as chic as this, you have to know what you’re looking for. In this case, the name Ett Hem, which is discreetly hidden within the detailing of a black iron gate. Head through and...",
+    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted, but priced as a splurge; here as a 'what good looks like' reference more than an everyday pick.",
+    "highlights": [
+      "Hidden, intimate hotel dining room",
+      "Chic Lärkstaden setting",
+      "Refined modern cooking (a splurge)"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1062,7 +1307,15 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "The residents of Östermalm can count themselves lucky to call this charming restaurant run by a husband-and-wide duo their local – but whether you’re a regular or not, you’ll instantly feel the ...",
+    "why_listed": "Bib Gourmand — Michelin's own good-value badge. This is the gold seed of the whole 'Michelin-adjacent value' idea: great cooking that won't break the bank.",
+    "highlights": [
+      "Charming husband-and-wife local",
+      "Farm-to-table focus",
+      "Warm, regular's-welcome feel",
+      "Bib Gourmand value"
+    ],
     "accepts_reservations": "Yes",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1090,7 +1343,14 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "World-renowned Chef Björn Frantzén provides a truly immersive experience that you won't forget in a hurry at his uber-stylish restaurant. Ring the bell to enter, before enjoying an aperitif in the...",
+    "why_listed": "Michelin 3-star — the benchmark for 'what good looks like'. Kept as a reference point for the fingerprint; ranks low by default because a 3-star palace is the opposite of the cheap-everyday brief.",
+    "highlights": [
+      "Sweden's only 3-star — world-renowned",
+      "Fully immersive multi-floor experience",
+      "The fingerprint's top reference point"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1118,7 +1378,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "This intimate restaurant offers great cooking and a fun night out, thanks to its moody lighting, pumping soundtrack and lively cocktail bar. Influenced by South America, Asia and Europe, the ...",
+    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
+    "highlights": [
+      "Moody, fun, music-led room",
+      "Globe-spanning small plates",
+      "Lively cocktail bar"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1146,7 +1413,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "Chic and sultry, this Södermalm spot delivers the look and vibe of a bar, with the added bonus of flavoursome small plates. The cooking is bang on-trend, blending Nordic and French influences with...",
+    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
+    "highlights": [
+      "Bar-like vibe with serious small plates",
+      "Nordic–French flavours, on-trend",
+      "Budget-priced Söder spot"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1174,7 +1448,14 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "Head past the bustle of the floors below and up to the third level of this beautiful city centre townhouse, where you’ll find this discreet, intimate restaurant that exudes tranquillity. Start ...",
+    "why_listed": "Michelin 1-star — seeds the 'what good looks like' fingerprint. A splurge benchmark, down-weighted by default so it doesn't crowd out the value cousins.",
+    "highlights": [
+      "Discreet, tranquil top-floor room",
+      "Refined creative tasting menu",
+      "One-star benchmark"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1202,7 +1483,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "Named after the historic Sperlingens Backe neighbourhood in which it's located, this upscale US-style steakhouse boasts a seductive cocktail bar, an open kitchen with a wood-fired grill, and a ...",
+    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
+    "highlights": [
+      "Wood-fired-grill steakhouse",
+      "Seductive cocktail bar",
+      "Upscale US-style format"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1230,7 +1518,14 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "Offering one of the city’s most unique dining experiences, Niklas Ekstedt eschews electricity and does all of his cooking over fire. Your visit opens with a tour of the kitchen, where the culinary...",
+    "why_listed": "Michelin 1-star — seeds the 'what good looks like' fingerprint. A splurge benchmark, down-weighted by default so it doesn't crowd out the value cousins.",
+    "highlights": [
+      "Everything cooked over open fire — no electricity",
+      "One of the city's most unique experiences",
+      "Opens with a kitchen tour"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1258,7 +1553,14 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "After more than a decade at their former address, chef-owners Adam and Albin moved to a handsome 19th-century building beside the opera and opposite the Swedish parliament. The interior features a...",
+    "why_listed": "Michelin 1-star — seeds the 'what good looks like' fingerprint. A splurge benchmark, down-weighted by default so it doesn't crowd out the value cousins.",
+    "highlights": [
+      "Chef-owners Adam & Albin's flagship",
+      "Handsome building by the opera",
+      "Inventive one-star tasting"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1286,7 +1588,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "Perfectly pitched for busy Humlegårdsgatan is this stylish take on a classic brasserie. It has a smart, elegant feel and a hugely impressive wine cellar. Appealing Swedish classics are immensely ...",
+    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
+    "highlights": [
+      "Elegant take on a classic brasserie",
+      "Hugely impressive wine cellar",
+      "Well-executed Swedish classics"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1322,7 +1631,15 @@
     "michelin_dna_score": 0.73,
     "confidence": "candidate",
     "inspector_note": null,
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Natural wine at 110 SEK vs the usual ~160",
+      "Inventive Nordic-meets-global plates",
+      "Lively neighbourhood room",
+      "Strong rotating wine list"
+    ],
     "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
     "source": [
       "web-search"
     ],
@@ -1350,7 +1667,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "The former Astoria Cinema, which dates from the 1870s, has been carefully restored and now boasts a bustling brasserie with all the glamour and opulence of yesteryear. Sit at the counter to watch ...",
+    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
+    "highlights": [
+      "Glamorous restored 1870s cinema",
+      "Bustling classic brasserie",
+      "Counter seats onto the kitchen"
+    ],
     "accepts_reservations": "Yes",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1378,7 +1702,14 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "If you're celebrating, then you've come to the right place. Sweden's most opulent restaurant sits within the historic Royal Opera House, and the sumptuous, high-ceilinged room comes bedecked with ...",
+    "why_listed": "Michelin 1-star — seeds the 'what good looks like' fingerprint. A splurge benchmark, down-weighted by default so it doesn't crowd out the value cousins.",
+    "highlights": [
+      "Sweden's most opulent dining room",
+      "Inside the Royal Opera House",
+      "Celebration-grade one-star"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1406,7 +1737,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "The name is a diminutive version of ‘petrichor’ – which refers to the lovely scent that accompanies rain after a warm period – and there’s a similarly pleasant cosiness to the restaurant itself, ...",
+    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
+    "highlights": [
+      "Cosy, intimate room (named after 'petrichor')",
+      "Refined modern cooking",
+      "Special-occasion feel without the star price"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1442,7 +1780,15 @@
     "michelin_dna_score": 0.7,
     "confidence": "candidate",
     "inspector_note": null,
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Lobster rolls and steak tartare",
+      "Burgers with café de Paris butter",
+      "From the Bar Abrovinsch team",
+      "Relaxed Söder wine-bar spirit"
+    ],
     "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
     "source": [
       "web-search"
     ],
@@ -1470,7 +1816,14 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "The net-curtained windows give little away, but once inside you’ll find an elegant room that’s a perfect match for this chic neighbourhood. The chefs work with calm efficiency in the open kitchen ...",
+    "why_listed": "Michelin 1-star — seeds the 'what good looks like' fingerprint. A splurge benchmark, down-weighted by default so it doesn't crowd out the value cousins.",
+    "highlights": [
+      "Elegant, discreet Östermalm room",
+      "Calm open-kitchen precision",
+      "One-star tasting"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1498,7 +1851,14 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "The magnificent, imposing Grand Hôtel is the home for this decadent restaurant, where rich flavours and impeccable Nordic seafood reign supreme. The tasting menu takes you through a roll-call of ...",
+    "why_listed": "Michelin 1-star — seeds the 'what good looks like' fingerprint. A splurge benchmark, down-weighted by default so it doesn't crowd out the value cousins.",
+    "highlights": [
+      "Impeccable Nordic seafood",
+      "Decadent Grand Hôtel setting",
+      "Roll-call tasting menu"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1526,7 +1886,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "After a few years as Djuret, this long-established restaurant has returned to its original guise and provides heaps of old-school charm. The dining room is full of character, with armchairs, ...",
+    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
+    "highlights": [
+      "Heaps of old-school charm",
+      "Character-filled Gamla Stan room",
+      "Returned to its classic guise"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1554,7 +1921,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "This bright, buzzy restaurant is just a cast away from the waterfront and has a semi-industrial fish-market look. Choose your seafood from the fridge or the tank, along with a cooking style, a ...",
+    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
+    "highlights": [
+      "Pick your seafood from the fridge or tank",
+      "Bright, buzzy fish-market look",
+      "Steps from the waterfront"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1582,7 +1956,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "On the western side of the borough of Södermalm, chef-owner Tomoko Hayashi brings a little piece of Japan to Stockholm’s dining scene by offering an omakase experience that doesn’t break the bank....",
+    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
+    "highlights": [
+      "Omakase that doesn't break the bank",
+      "Chef-owner Tomoko Hayashi",
+      "Authentic washoku on Södermalm"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1610,7 +1991,14 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "Your experience at Celeste starts the moment enter the back garden, ring the bell and are whisked up in the lift to the 8th floor – where you’ll be served a welcome drink on the terrace to a bird’...",
+    "why_listed": "Michelin 1-star — seeds the 'what good looks like' fingerprint. A splurge benchmark, down-weighted by default so it doesn't crowd out the value cousins.",
+    "highlights": [
+      "8th-floor room with a terrace welcome drink",
+      "Theatrical arrival sequence",
+      "One-star with a view"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1638,7 +2026,15 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "Set within the Grand Hotel, this trendy, modern bistro offers well-priced dishes with a Scandinavian heart; three are about right for one person, or order more and share. Grab a seat at the ...",
+    "why_listed": "Bib Gourmand — Michelin's own good-value badge. This is the gold seed of the whole 'Michelin-adjacent value' idea: great cooking that won't break the bank.",
+    "highlights": [
+      "Well-priced modern dishes inside the Grand Hôtel",
+      "Three plates make a meal — built for sharing",
+      "Lively counter seating",
+      "Bib Gourmand value"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1673,7 +2069,15 @@
     "michelin_dna_score": 0.55,
     "confidence": "candidate",
     "inspector_note": null,
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Sourdough and legendary cinnamon & cardamom buns",
+      "Ecological flour from a Swedish mill",
+      "Koppi coffee",
+      "Northern-Swedish baking tradition"
+    ],
     "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
     "source": [
       "web-search"
     ],
@@ -1709,7 +2113,15 @@
     "michelin_dna_score": 0.65,
     "confidence": "candidate",
     "inspector_note": null,
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Kimchi toast and cornflake-crusted fried chicken",
+      "Asian small plates with a Scandi touch",
+      "From the Bistro Barbro team",
+      "~360–460 SEK per person"
+    ],
     "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
     "source": [
       "web-search"
     ],
@@ -1743,7 +2155,14 @@
     "michelin_dna_score": 0.8,
     "confidence": "candidate",
     "inspector_note": "Renowned single-origin roaster, bright Scandinavian-cozy space. (approx coords)",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Renowned single-origin roaster",
+      "Bright, cosy Scandinavian space",
+      "Among Stockholm's best coffee"
+    ],
     "accepts_reservations": null,
+    "added_via": "Hand-seeded from 'best of Stockholm' web guides during the initial list build.",
     "source": [
       "web"
     ],
@@ -1771,7 +2190,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "Head straight for the roof terrace to kick off your visit with a cocktail and 360° views of Stockholm and, once inside, opt for a seat by the curved window to capitalise on the 13th floor location...",
+    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
+    "highlights": [
+      "13th-floor roof terrace with 360° views",
+      "Cocktails above the city",
+      "Modern Swedish cooking"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1807,7 +2233,15 @@
     "michelin_dna_score": 0.8,
     "confidence": "candidate",
     "inspector_note": "Hantverk bakery at Garnisonen by baking world champion Håkan Johansson Frost — long-fermented croissants, ancient grains (spelt, emmer, rye) milled on site. (approx coords)",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Hantverk bakery at Garnisonen by baking world champion Håkan Johansson Frost — long-fermented croissants, ancient gra…",
+      "bakery",
+      "craft",
+      "sourdough"
+    ],
     "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
     "source": [
       "web-search"
     ],
@@ -1835,7 +2269,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "Named after the 1966 Ingmar Bergman film, this stylish restaurant creates a striking contrast between its old townhouse exterior and its elegant interior design. Before dinner you are invited down...",
+    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted, but priced as a splurge; here as a 'what good looks like' reference more than an everyday pick.",
+    "highlights": [
+      "Striking old-townhouse-meets-modern design",
+      "Named after the Bergman film",
+      "Elegant, theatrical dinner (a splurge)"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1863,7 +2304,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "A compact bistro owned by a group of friends, who set up a furniture making business and now use the bistro to showcase their products. Cooking follows a theme which changes every two months – ...",
+    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
+    "highlights": [
+      "Menu theme changes every two months",
+      "Run by a furniture-making collective",
+      "Compact, characterful bistro"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1891,7 +2339,15 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "Charming in its lack of pretension, this bohemian neighbourhood restaurant has a homely feel. It’s simply furnished and the pared-back cooking has an unfussiness to match. Dishes show technical ...",
+    "why_listed": "Bib Gourmand — Michelin's own good-value badge. This is the gold seed of the whole 'Michelin-adjacent value' idea: great cooking that won't break the bank.",
+    "highlights": [
+      "Charming, unpretentious and homely",
+      "Technically sharp, pared-back cooking",
+      "Bohemian neighbourhood feel",
+      "Bib Gourmand value"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1919,7 +2375,15 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "Ulla Winbladh was originally built as a steam bakery for the 1897 Stockholm World Fair and is set in charming parkland beside the Skansen open-air museum. Sit on the terrace or in the older, more ...",
+    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
+    "highlights": [
+      "Classic Swedish husmanskost",
+      "Charming parkland setting by Skansen",
+      "Lovely summer terrace",
+      "Historic 1897 building"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -1956,7 +2420,15 @@
     "michelin_dna_score": 0.7,
     "confidence": "candidate",
     "inspector_note": "Neapolitan chef Francesco Giudice bakes maritozzi daily (traditional plus weekly Italian/Swedish specials), cornetti, focaccia; espresso and simple pasta. (approx coords)",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Neapolitan chef Francesco Giudice bakes maritozzi daily (traditional plus weekly Italian/Swedish specials), cornetti,…",
+      "bakery",
+      "chef-driven",
+      "italian"
+    ],
     "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
     "source": [
       "web-search"
     ],
@@ -1984,7 +2456,15 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "This lively wine bar is a perfect fit for the neighbourhood. Sit at closely set tables or on high stools either up at the bar counter or next to the window, surrounded by paintings and hunting ...",
+    "why_listed": "Bib Gourmand — Michelin's own good-value badge. This is the gold seed of the whole 'Michelin-adjacent value' idea: great cooking that won't break the bank.",
+    "highlights": [
+      "Lively, natural-leaning wine bar",
+      "Budget-friendly Bib Gourmand",
+      "Counter and window stools",
+      "Söder neighbourhood favourite"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -2012,7 +2492,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "Homely and cosy, there is a wonderful lack of pretension to this French-inspired bistro. Flavourful dishes from the small open kitchen include classical French desserts like blueberry clafoutis ...",
+    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
+    "highlights": [
+      "Homely, unpretentious French bistro",
+      "Classic French desserts (e.g. blueberry clafoutis)",
+      "Budget-priced Michelin listing"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -2040,7 +2527,14 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "This strikingly designed restaurant sits near the beautiful Royal Djurgården. Its stage is the open kitchen, with the chefs often adding their finishing touches tableside. Beautifully composed ...",
+    "why_listed": "Michelin 2-star — a top-end reference for the taste fingerprint. Aspirational, down-weighted for everyday picks because of the price.",
+    "highlights": [
+      "Beautifully composed two-star cooking",
+      "Striking design near Djurgården",
+      "Tableside finishing from the open kitchen"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
@@ -2068,7 +2562,14 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "If there's such a thing as ‘industrial elegance’, then they’ve found it at this bang on-trend spot in the city’s meat-packing district. Exposed wires and concrete pillars combine with white ...",
+    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
+    "highlights": [
+      "'Industrial elegance' in the old meat-packing district",
+      "On-trend modern cooking",
+      "Budget-priced for a Michelin listing"
+    ],
     "accepts_reservations": "No",
+    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
