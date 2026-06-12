@@ -67,7 +67,10 @@
   #detail h2{margin:0 26px 6px 0;font-size:19px;}
   #detail .dbody{padding:14px 18px;overflow-y:auto;flex:1;}
   #detail .why{background:#eaf7ee;border-left:3px solid var(--green);color:#0a5c28;padding:8px 11px;border-radius:6px;font-size:13px;margin-bottom:14px;}
+  #detail .why-listed{background:#fbf3e6;border-left-color:#c08a1e;color:#6b4a05;}
   #detail .note{font-size:13.5px;line-height:1.55;color:#33302b;margin-bottom:16px;}
+  ul.goodparts{margin:4px 0 16px;padding-left:18px;font-size:13.5px;line-height:1.5;color:#33302b;}
+  ul.goodparts li{margin-bottom:3px;}
   .kv{display:grid;grid-template-columns:96px 1fr;gap:6px 10px;font-size:13px;margin-bottom:14px;}
   .kv dt{color:var(--muted);}
   .kv dd{margin:0;}
@@ -215,6 +218,11 @@ function openDetail(i,fly){
   const dna = Math.round((p.michelin_dna_score||0)*100);
   let h="";
   if(p.reason) h+='<div class="why">➜ '+esc(p.reason)+'</div>';
+  if(p.why_listed) h+='<div class="why why-listed"><b>Why it’s on your list:</b> '+esc(p.why_listed)+'</div>';
+  if((p.highlights||[]).length){
+    h+='<label class="flabel">The good parts</label><ul class="goodparts">'
+      +p.highlights.map(x=>'<li>'+esc(x)+'</li>').join("")+'</ul>';
+  }
   if(p.inspector_note) h+='<div class="note">'+esc(p.inspector_note)+'</div>';
   h+='<dl class="kv">';
   h+='<dt>Cuisine</dt><dd>'+esc((p.cuisine||[]).join(", ")||"—")+'</dd>';
@@ -226,6 +234,7 @@ function openDetail(i,fly){
   h+='<dt>Michelin DNA</dt><dd>'+dna+'% <div class="dnabar"><i style="width:'+dna+'%"></i></div></dd>';
   if(p.last_verified) h+='<dt>Verified</dt><dd>'+esc(p.last_verified)+'</dd>';
   if((p.source||[]).length) h+='<dt>Source</dt><dd>'+esc((p.source||[]).join(", "))+'</dd>';
+  if(p.added_via) h+='<dt>How added</dt><dd>'+esc(p.added_via)+'</dd>';
   h+='</dl>';
   if((p.vibe_tags||[]).length) h+='<label class="flabel">Vibe</label><div class="vchips">'+p.vibe_tags.map(v=>'<span>'+esc(v)+'</span>').join("")+'</div>';
   if(p.notes) h+='<div class="note" style="margin-top:14px;font-style:italic">📝 '+esc(p.notes)+'</div>';
@@ -371,7 +380,7 @@ function matches(p){
   if(F.cuisine&&!(p.cuisine||[]).includes(F.cuisine)) return false;
   if((p.distance_km||0)>F.dist) return false;
   if(F.q){
-    const hay=[p.name,(p.cuisine||[]).join(" "),p.neighborhood,p.inspector_note,(p.vibe_tags||[]).join(" "),p.address].join(" ").toLowerCase();
+    const hay=[p.name,(p.cuisine||[]).join(" "),p.neighborhood,p.inspector_note,(p.highlights||[]).join(" "),p.why_listed,(p.vibe_tags||[]).join(" "),p.address].join(" ").toLowerCase();
     if(!hay.includes(F.q)) return false;
   }
   return true;
