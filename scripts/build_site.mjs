@@ -1,5 +1,6 @@
 // Build the published map site at docs/index.html (served by GitHub Pages).
-// Renders the full places list (public restaurant/café data — no personal taste/visits).
+// Renders the full places list plus your visit history (✓ Visited badge, ratings, comments)
+// joined in by render_map.mjs. NOTE: this site is PUBLIC, so embedded comments are world-readable.
 import { spawnSync } from "node:child_process";
 import { copyFile, mkdir } from "node:fs/promises";
 import { dirname, join } from "node:path";
