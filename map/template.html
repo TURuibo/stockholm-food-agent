@@ -93,6 +93,25 @@
     font-family:var(--sans);box-shadow:0 1px 3px rgba(156,23,51,.35);}
   .badge{display:inline-block;padding:2px 9px;border-radius:999px;font-size:9.5px;font-weight:600;
     letter-spacing:.06em;text-transform:uppercase;color:#fff;margin-right:5px;vertical-align:middle;}
+  .badge-visited{background:var(--green);}
+  .cvisited{display:inline-block;background:var(--green);color:#fff;font-size:10px;font-weight:700;
+    border-radius:50%;width:17px;height:17px;line-height:17px;text-align:center;margin-right:6px;
+    vertical-align:middle;font-family:var(--sans);}
+
+  /* ---- visit history (read-only) ---- */
+  .visited-block{margin:0 0 16px;padding:13px 15px;border:1px solid var(--line);border-left:3px solid var(--green);
+    border-radius:10px;background:linear-gradient(#fbfdfb,#f4f8f4);}
+  .visited-block .vhead{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--green);margin-bottom:9px;}
+  .visited-block .vlog{list-style:none;margin:0;padding:0;}
+  .visited-block .vlog li{padding:8px 0;border-top:1px dashed var(--line);}
+  .visited-block .vlog li:first-child{border-top:0;padding-top:0;}
+  .rchip{display:inline-block;font-family:var(--sans);font-size:11px;font-weight:600;padding:2px 8px;
+    border-radius:999px;color:#fff;}
+  .rchip.rpos{background:var(--green);} .rchip.rneg{background:var(--accent);} .rchip.r0{background:var(--faint);}
+  .vmeta{font-family:var(--sans);font-size:11px;color:var(--muted);margin-top:5px;}
+  .vmeta .vdate{font-weight:600;color:var(--gold);}
+  .vcomment{font-family:var(--serif);font-size:16px;color:var(--ink);margin-top:5px;line-height:1.4;}
 
   /* ---- map ---- */
   #map{grid-row:2;grid-column:2;height:100%;min-height:0;background:#eae4d8;}
@@ -298,10 +317,12 @@ function openDetail(i,fly){
   if(p.green_star) badges+='<span class="badge" style="background:#3a8a3a">🌿 Green Star</span>';
   badges+='<span class="badge" style="background:'+(p.confidence==="verified"?"#5a5345":"#b08d4f")+'">'+esc(p.confidence||"")+'</span>';
   if(p.type==="cafe") badges+='<span class="badge" style="background:'+CAFE_COLOR+'">café</span>';
+  if(p.visited) badges+='<span class="badge badge-visited">✓ Visited'+(p.visited.count>1?' ×'+p.visited.count:'')+'</span>';
   document.getElementById("d-badges").innerHTML=badges;
 
   const dna = Math.round((p.michelin_dna_score||0)*100);
   let h="";
+  if(p.visited) h+=visitedHTML(p.visited);
   if(p.reason) h+='<div class="why">➜ '+esc(p.reason)+'</div>';
   if(p.why_listed) h+='<div class="why why-listed"><b>Why it’s on your list:</b> '+esc(p.why_listed)+'</div>';
   if((p.highlights||[]).length){
@@ -336,6 +357,28 @@ function openDetail(i,fly){
   setActive(i);
   if(fly!==false){ map.setView([p.lat,p.lng], Math.max(map.getZoom(),14),{animate:true}); }
   marker.openPopup&&null;
+}
+
+/* ---------- visit history (read-only: your logged ratings + comments) ---------- */
+const RATING_LABEL = {2:"loved it",1:"liked it",0:"neutral","-1":"meh","-2":"disliked"};
+function ratingChip(r){
+  if(r==null) return '<span class="rchip r0">— no rating</span>';
+  const cls = r>0?"rpos":(r<0?"rneg":"r0");
+  return '<span class="rchip '+cls+'">'+signed(r)+' · '+esc(RATING_LABEL[r]||"")+'</span>';
+}
+function fmtDate(ts){ if(!ts) return ""; const d=String(ts).slice(0,10); return d; }
+function visitEntry(v){
+  let meta=[]; if(v.occasion) meta.push(esc(v.occasion));
+  if(v.companions) meta.push("with "+esc(v.companions));
+  if(v.would_return===false) meta.push("wouldn’t return");
+  const sub = (fmtDate(v.ts)?'<span class="vdate">'+esc(fmtDate(v.ts))+'</span>':'')
+            + (meta.length?' · '+meta.join(" · "):'');
+  return '<li>'+ratingChip(v.rating)+(sub?'<div class="vmeta">'+sub+'</div>':'')
+    + (v.comment?'<div class="vcomment">“'+esc(v.comment)+'”</div>':'')+'</li>';
+}
+function visitedHTML(vi){
+  const head = '<div class="vhead">✓ You’ve been here'+(vi.count>1?' · '+vi.count+' visits':'')+'</div>';
+  return '<div class="visited-block">'+head+'<ul class="vlog">'+vi.log.map(visitEntry).join("")+'</ul></div>';
 }
 
 /* ---------- review form (writes back to the project DB via a GitHub Issue) ---------- */
@@ -396,7 +439,8 @@ const listEl=document.getElementById("list");
 function cardHTML(p){
   const color=p.type==="cafe"?CAFE_COLOR:(TIER_COLOR[p.michelin]||TIER_COLOR.none);
   const tier=(p.michelin&&p.michelin!=="none")?'<span class="badge" style="background:'+color+'">'+esc(TIER_LABEL[p.michelin])+'</span>':"";
-  return '<div class="ctop"><div class="cname">'+(p.rank?'<span class="crank">'+p.rank+'</span>':'')+esc(p.name)+'</div>'
+  const seen=p.visited?'<span class="cvisited" title="You\'ve been here">✓</span>':"";
+  return '<div class="ctop"><div class="cname">'+(p.rank?'<span class="crank">'+p.rank+'</span>':'')+seen+esc(p.name)+'</div>'
     +'<div class="cdist">'+(p.distance_km!=null?p.distance_km+" km":"")+'</div></div>'
     +'<div class="cmeta">'+tier+esc((p.cuisine||[]).join(", "))+'</div>'
     +'<div class="cmeta">'+(VALUE_LABEL[p.value_tier]||"")+' · '+esc(p.neighborhood||"")+'</div>';
