@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>Stockholm Food Map</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
   }
   *{box-sizing:border-box;}
   html,body{margin:0;height:100%;font-family:var(--sans);color:var(--ink);background:var(--bg);
-    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden;}
   ::selection{background:var(--gold-soft);color:#fff;}
   /* refined scrollbars */
   *{scrollbar-width:thin;scrollbar-color:#d8cfbd transparent;}
@@ -197,16 +197,29 @@
   /* ---- mobile ---- */
   #menuBtn{display:none;}
   @media(max-width:780px){
-    #app{grid-template-columns:1fr;}
-    header{padding:11px 16px;gap:12px;}
-    header .brand .bname{font-size:20px;}
-    aside{position:fixed;top:62px;left:0;bottom:0;width:88vw;max-width:360px;z-index:600;
+    #app{grid-template-columns:minmax(0,1fr);max-width:100vw;}
+    #app > *{min-width:0;}            /* prevent the Leaflet map from blowing out the 1fr track */
+    #map{max-width:100vw;}
+    /* header wraps: row 1 = ☰ · title · reset, row 2 = full-width search (so nothing runs off-screen) */
+    header{flex-wrap:wrap;padding:calc(10px + env(safe-area-inset-top)) 14px 10px;gap:10px 12px;}
+    header .brand{flex:1 1 0;min-width:0;}
+    header .brand .bname{font-size:18px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block;}
+    header .brand small{display:none;}
+    header .search{order:5;flex:1 1 100%;max-width:none;}
+    header .count{display:none;}
+    #resetBtn{flex:none;padding:9px 13px;}
+    #menuBtn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);
+      background:var(--panel);color:var(--gold);border-radius:10px;width:40px;height:40px;font-size:17px;cursor:pointer;flex:none;}
+    aside{position:fixed;top:var(--header-h,104px);left:0;bottom:0;width:86vw;max-width:360px;z-index:1100;
       transform:translateX(-103%);transition:transform .25s cubic-bezier(.22,.61,.36,1);box-shadow:var(--shadow-lg);}
     aside.open{transform:translateX(0);}
     #map{grid-column:1;grid-row:2;}
-    .filters{max-height:55%;}
-    #menuBtn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);
-      background:var(--panel);color:var(--gold);border-radius:10px;width:38px;height:38px;font-size:16px;cursor:pointer;}
+    .filters{max-height:50%;}
+    .chip{padding:7px 13px;}
+    /* detail = full-width sheet on phones, with a bigger close target */
+    #detail{width:100%;max-width:100vw;}
+    #detail .dclose{width:36px;height:36px;font-size:20px;}
+    .legend{font-size:11px;padding:8px 11px;line-height:1.6;}
   }
 </style>
 </head>
@@ -551,6 +564,15 @@ legend.addTo(map);
 
 const sidebar=document.getElementById("sidebar");
 document.getElementById("menuBtn").onclick=()=>sidebar.classList.toggle("open");
+
+/* keep the filter drawer flush beneath the header even when it wraps to two rows on mobile */
+function setHeaderH(){
+  document.documentElement.style.setProperty("--header-h", document.querySelector("header").offsetHeight + "px");
+}
+setHeaderH();
+addEventListener("resize", setHeaderH);
+addEventListener("orientationchange", setHeaderH);
+setTimeout(()=>{ map.invalidateSize(); setHeaderH(); }, 60); // fix Leaflet tile sizing after first paint
 
 /* initial sort: if any place has a rank (shortlist), default to rank view */
 if(PLACES.some(p=>p.rank)){ F.sort="rank"; document.getElementById("f-sort").value="rank"; }
