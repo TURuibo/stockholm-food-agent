@@ -67,6 +67,10 @@ PRICE_CEILING = mid   # default max value_tier; "splurge" only when explicitly a
 - Be polite to Michelin: all fetching goes through `scripts/lib/fetch_polite.mjs` (browser UA,
   delay, cache). Never hit disallowed query-param URLs (sort/search/showMap); use the sitemap.
 - After changing `places.json`, the map (`map/view.html`) is stale — re-render before showing it.
+- The published map ranks by a per-place **`match_score`** (0–100), computed in `render_map.mjs` from
+  the same `config.json` weights as the recommender (DNA · value · near-home · taste-if-present). It's
+  the map's default **"Best match"** sort and shows as a ★ badge. The map is phone-first: a bottom
+  Map/List switch, full-width list with collapsible filters, and a full-width detail sheet.
 
 ## Commands (in `.claude/commands/`)
 `/onboard` seed taste · `/recommend [ctx]` core · `/nearby` walking distance · `/visited` log+learn ·
