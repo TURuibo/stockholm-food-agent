@@ -379,6 +379,94 @@
     "notes": "User-requested add 2026-06-12 (neighbourhood-keeper track, not craft track). Family-run by Malin & Pauline; from-scratch food, small suppliers, organic coffee, raw food + weekend brunch. 4.4/5 over 446 Google reviews. Coords approximate."
   },
   {
+    "id": "brioche-bageri-bistro",
+    "name": "Brioche Bageri & Bistro",
+    "type": "cafe",
+    "cuisine": [
+      "Bakery",
+      "French",
+      "Brunch"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": "$",
+    "value_tier": "everyday",
+    "lat": 59.3336,
+    "lng": 17.9802,
+    "address": "Alviks torg, Bromma",
+    "neighborhood": "Alvik (Bromma)",
+    "distance_km": 3.1,
+    "vibe_tags": [
+      "fika",
+      "bakery",
+      "brunch",
+      "lunch",
+      "neighbourhood"
+    ],
+    "michelin_dna_score": 0.6,
+    "confidence": "candidate",
+    "inspector_note": null,
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Brunkebergs Bageri pedigree — craft since 2002",
+      "Everything baked on site by hand, natural ingredients",
+      "Bread rotates monthly with the seasons",
+      "Weekend brunch on Alviks torg"
+    ],
+    "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
+    "source": [
+      "web-search"
+    ],
+    "source_url": "https://brioche.se/",
+    "last_verified": "2026-06-12",
+    "notes": "Admission: craft track. External signal: Brunkebergs Bageri pedigree + White Guide cafe listing. Caveat: Google ~4.1 — solid craft, modest crowd score. Lat/lng approximate (Alviks torg)."
+  },
+  {
+    "id": "park-bageri-konditori",
+    "name": "Park Bageri & Konditori",
+    "type": "cafe",
+    "cuisine": [
+      "Bakery",
+      "Swedish fika"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": "$",
+    "value_tier": "everyday",
+    "lat": 59.3296,
+    "lng": 17.9752,
+    "address": "Västerled 4, 167 55 Bromma",
+    "neighborhood": "Äppelviken (Bromma)",
+    "distance_km": 3.5,
+    "vibe_tags": [
+      "fika",
+      "bakery",
+      "cozy",
+      "neighbourhood-classic",
+      "brunch",
+      "outdoor-seating"
+    ],
+    "michelin_dna_score": 0.7,
+    "confidence": "candidate",
+    "inspector_note": null,
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "White Guide cafe listing — Very Fine Level",
+      "Heritage-grain sourdough; world-class mazariner",
+      "Same owner pair for 10 years; wood-fired pizza Wednesdays",
+      "Century-old fika spot in idyllic Äppelviken"
+    ],
+    "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
+    "source": [
+      "web-search"
+    ],
+    "source_url": "https://whiteguide.com/se/sv/cafes/8734-park-bageri-och-konditori",
+    "last_verified": "2026-06-12",
+    "notes": "Admission: craft track. External signal: White Guide cafe listing (Very Fine Level) + sustained press (Thatsup, Robbans bästa). Heritage-grain sourdough and from-scratch konditori craft. Lat/lng approximate (Västerled 4 by Alviks strand). Google ~4.4/420."
+  },
+  {
     "id": "essence-1203656",
     "name": "Essence",
     "type": "restaurant",
@@ -568,6 +656,49 @@
     "source_url": "https://www.localspecialtycoffee.com/cities/best-coffee-in-stockholm",
     "last_verified": "2026-06-12",
     "notes": ""
+  },
+  {
+    "id": "nockeby-bageri",
+    "name": "Nockeby Bageri",
+    "type": "cafe",
+    "cuisine": [
+      "Bakery",
+      "Swedish fika"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": "$",
+    "value_tier": "everyday",
+    "lat": 59.3297,
+    "lng": 17.9222,
+    "address": "Nockeby torg 9, Bromma",
+    "neighborhood": "Nockeby (Bromma)",
+    "distance_km": 4.5,
+    "vibe_tags": [
+      "fika",
+      "bakery",
+      "organic",
+      "stone-oven",
+      "neighbourhood-classic"
+    ],
+    "michelin_dna_score": 0.7,
+    "confidence": "candidate",
+    "inspector_note": null,
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Founded by world-champion baker Håkan Johansson",
+      "100% organic, visible stone oven",
+      "White Guide cafe listing",
+      "Bread sells out — queues into the street"
+    ],
+    "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
+    "source": [
+      "web-search"
+    ],
+    "source_url": "https://whiteguide.com/se/sv/cafes/8871",
+    "last_verified": "2026-06-12",
+    "notes": "Admission: craft track. External signal: world-champion baker pedigree (Håkan Johansson) + White Guide listing + Mitt i/Thatsup press. Google ~4.4/269. Lat/lng approximate (Nockeby torg)."
   },
   {
     "id": "minh-mat",
@@ -1288,6 +1419,50 @@
     "notes": ""
   },
   {
+    "id": "vete-katten",
+    "name": "Vete-Katten",
+    "type": "cafe",
+    "cuisine": [
+      "Fika",
+      "Classic",
+      "Patisserie"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": null,
+    "value_tier": "everyday",
+    "lat": 59.3349,
+    "lng": 18.0589,
+    "address": "Kungsgatan 55, Norrmalm",
+    "neighborhood": "Norrmalm",
+    "distance_km": 5.8,
+    "vibe_tags": [
+      "fika",
+      "classic",
+      "konditori",
+      "cozy",
+      "quiet"
+    ],
+    "michelin_dna_score": 0.78,
+    "confidence": "candidate",
+    "inspector_note": null,
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Konditori institution since 1928",
+      "White Guide top-patisserie recognition",
+      "Warren of charming old-Stockholm rooms",
+      "Classic prinsesstårta and semlor"
+    ],
+    "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
+    "source": [
+      "web-search"
+    ],
+    "source_url": "https://www.vetekatten.se/",
+    "last_verified": "2026-06-12",
+    "notes": "Added 2026-06-12 after user relaxed the fame rule (price is the gate, not obscurity). Originally hunter-skipped only for being a famous classic. Konditori since 1928; White Guide top-patisserie recognition; warren of old-Stockholm rooms. Coords approximate."
+  },
+  {
     "id": "arla",
     "name": "ÄRLA",
     "type": "restaurant",
@@ -1357,6 +1532,51 @@
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/frantzen",
     "last_verified": "2026-06-12",
     "notes": ""
+  },
+  {
+    "id": "kanaans-tradgardscafe",
+    "name": "Kanaans Trädgårdscafé",
+    "type": "cafe",
+    "cuisine": [
+      "Garden cafe",
+      "Swedish fika",
+      "Brunch"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": "$",
+    "value_tier": "everyday",
+    "lat": 59.3487,
+    "lng": 17.8678,
+    "address": "Kanaans väg 83, 168 44 Bromma",
+    "neighborhood": "Grimsta/Riksby edge (Bromma)",
+    "distance_km": 6,
+    "vibe_tags": [
+      "garden",
+      "fika",
+      "outdoor-seating",
+      "family-friendly",
+      "scenic",
+      "brunch"
+    ],
+    "michelin_dna_score": 0.6,
+    "confidence": "candidate",
+    "inspector_note": null,
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "White Guide cafe listing",
+      "Everything from scratch in own kitchen & kakeri",
+      "Garden by Mälaren in Grimsta nature reserve",
+      "~4.3 on Google across 6000+ reviews"
+    ],
+    "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
+    "source": [
+      "web-search"
+    ],
+    "source_url": "https://whiteguide.com/se/sv/cafes/8978-kanaans-tradgardscafe",
+    "last_verified": "2026-06-12",
+    "notes": "Admission: craft track. External signal: White Guide cafe listing + from-scratch kitchen/kakeri, validated by massive sustained local love (~4.3/6352). Western-Bromma garden analogue of Rosendals. Lat/lng approximate (by Kanaanbadet, Mälaren). Open daily ~11-16/17."
   },
   {
     "id": "black-milk-gastro-bar",
@@ -2506,6 +2726,50 @@
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/voisine",
     "last_verified": "2026-06-12",
     "notes": ""
+  },
+  {
+    "id": "rosendals-tradgardskafe",
+    "name": "Rosendals Trädgårdskafé",
+    "type": "cafe",
+    "cuisine": [
+      "Fika",
+      "Bakery",
+      "Farm to table"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": null,
+    "value_tier": "everyday",
+    "lat": 59.3269,
+    "lng": 18.1127,
+    "address": "Rosendalsterrassen 12, Djurgården",
+    "neighborhood": "Djurgården",
+    "distance_km": 8.9,
+    "vibe_tags": [
+      "fika",
+      "garden",
+      "farm-to-table",
+      "bakery",
+      "destination"
+    ],
+    "michelin_dna_score": 0.75,
+    "confidence": "candidate",
+    "inspector_note": null,
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Wood-fired sourdough bakery",
+      "Biodynamic garden — produce from its own beds",
+      "Greenhouse and orchard seating on Djurgården",
+      "White Guide winner"
+    ],
+    "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
+    "source": [
+      "web-search"
+    ],
+    "source_url": "https://www.rosendalstradgard.se/",
+    "last_verified": "2026-06-12",
+    "notes": "Added 2026-06-12 after user relaxed the fame rule. Originally hunter-skipped as a famous destination café. White Guide winner; wood-fired sourdough bakery, biodynamic garden — produce from its own beds; greenhouse and orchard seating. Far from home (Djurgården) so the 6 km default filter gates it unless asked. Coords approximate."
   },
   {
     "id": "aira",

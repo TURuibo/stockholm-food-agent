@@ -120,6 +120,12 @@ const HIGHLIGHTS = {
   "solen": ["'Industrial elegance' in the old meat-packing district", "On-trend modern cooking", "Budget-priced for a Michelin listing"],
   "juniper-tree": ["From-scratch brunch — smoothie bowls, truffle scrambled eggs", "Family-run, living-room cozy", "4.4/5 over 446 Google reviews", "~1.7 km away in Råsunda"],
   "cafe-volta-sundbyberg": ["Bread baked in-house every morning", "Work-friendly living-room vibe", "4.4/5 over 764 Google reviews", "200 m from home in central Sundbyberg"],
+  "vete-katten": ["Konditori institution since 1928", "White Guide top-patisserie recognition", "Warren of charming old-Stockholm rooms", "Classic prinsesstårta and semlor"],
+  "park-bageri-konditori": ["White Guide cafe listing — Very Fine Level", "Heritage-grain sourdough; world-class mazariner", "Same owner pair for 10 years; wood-fired pizza Wednesdays", "Century-old fika spot in idyllic Äppelviken"],
+  "brioche-bageri-bistro": ["Brunkebergs Bageri pedigree — craft since 2002", "Everything baked on site by hand, natural ingredients", "Bread rotates monthly with the seasons", "Weekend brunch on Alviks torg"],
+  "nockeby-bageri": ["Founded by world-champion baker Håkan Johansson", "100% organic, visible stone oven", "White Guide cafe listing", "Bread sells out — queues into the street"],
+  "kanaans-tradgardscafe": ["White Guide cafe listing", "Everything from scratch in own kitchen & kakeri", "Garden by Mälaren in Grimsta nature reserve", "~4.3 on Google across 6000+ reviews"],
+  "rosendals-tradgardskafe": ["Wood-fired sourdough bakery", "Biodynamic garden — produce from its own beds", "Greenhouse and orchard seating on Djurgården", "White Guide winner"],
 };
 
 // Fallback if a place isn't in the authored table (e.g. a brand-new hunter find).

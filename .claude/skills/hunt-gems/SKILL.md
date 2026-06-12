@@ -1,6 +1,6 @@
 ---
 name: hunt-gems
-description: Grow the restaurant/café list by discovering Michelin-adjacent value places in Stockholm — similar quality to starred spots but not yet famous and cheaper. Use when the user asks to find new places, expand the list, "hunt for gems", or on the weekly auto-refresh. Adds finds as candidates with provenance.
+description: Grow the restaurant/café list by discovering Michelin-adjacent value places in Stockholm — similar quality to starred spots but cheaper. Use when the user asks to find new places, expand the list, "hunt for gems", or on the weekly auto-refresh. Adds finds as candidates with provenance.
 ---
 
 # Hunt Gems (auto-growth)
@@ -13,6 +13,8 @@ There are **two admission tracks** (record which one in `notes`):
 - **Craft track** (the default) — external craft signal required: chef/baker pedigree, critical
   recognition (White Guide, serious food press), or verifiable ingredient obsession. Self-claims
   and good Google ratings alone don't qualify. Score `michelin_dna_score` ≥ 0.6.
+  **Fame is NOT a disqualifier** (user-confirmed 2026-06-12): a famous classic like Vete-Katten is
+  welcome as long as it clears the craft bar and the price gate. Only price excludes.
 - **Neighbourhood-keeper track** (user-confirmed 2026-06-12 via Juniper Tree & Café Volta) —
   beloved everyday cafés the user actually wants in rotation: cozy/work-friendly/brunch vibe,
   family-run or independent feel, strong sustained local reputation (≳4.3 Google over hundreds of
