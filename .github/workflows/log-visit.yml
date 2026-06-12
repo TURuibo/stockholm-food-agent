@@ -35,15 +35,18 @@ jobs:
           BODY: ${{ github.event.issue.body }}
         run: node scripts/ci_append_visit.mjs
 
+      - name: Rebuild the published map (so docs/index.html shows the new visit)
+        run: node scripts/build_site.mjs
+
       - name: Commit & push
         run: |
           git config user.name "food-map-bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/visits.jsonl
+          git add data/visits.jsonl docs/index.html
           if git diff --cached --quiet; then
             echo "Nothing to commit."
           else
-            git commit -m "log visit from map (closes #${{ github.event.issue.number }})"
+            git commit -m "log visit from map + rebuild map (closes #${{ github.event.issue.number }})"
             git push
           fi
 
@@ -52,4 +55,4 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh issue close "${{ github.event.issue.number }}" \
-            -c "Logged ✅ to \`data/visits.jsonl\` and committed. Run \`git pull\` at home to sync — your taste profile updates after a few reviews. Thanks!"
+            -c "Logged ✅ to \`data/visits.jsonl\` and the public map was rebuilt — it now shows this place as ✓ Visited with your rating & comment. Run \`git pull\` at home to sync; your taste profile updates after a few reviews. Thanks!"
