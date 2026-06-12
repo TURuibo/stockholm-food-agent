@@ -51,7 +51,14 @@ const place = {
   michelin_dna_score: incoming.michelin_dna_score ?? 0.6,
   confidence: "candidate",
   inspector_note: incoming.note || null,
+  // Provenance/merit fields — see scripts/annotate_provenance.mjs for the canonical
+  // derivation. New finds are always candidates added by the hunter's web search.
+  why_listed: incoming.why_listed
+    || "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+  highlights: incoming.highlights || [],
   accepts_reservations: null,
+  added_via: incoming.added_via
+    || "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
   source: incoming.source || ["web"],
   source_url: incoming.source_url || null,
   last_verified: new Date().toISOString().slice(0, 10),
