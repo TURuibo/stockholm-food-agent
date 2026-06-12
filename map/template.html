@@ -86,7 +86,12 @@
   .card.active::before{background:linear-gradient(180deg,var(--gold-soft),var(--gold));}
   .card .ctop{display:flex;justify-content:space-between;gap:8px;align-items:baseline;}
   .card .cname{font-family:var(--serif);font-weight:600;font-size:17px;letter-spacing:.01em;color:var(--ink);}
-  .card .cdist{font-size:11px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums;letter-spacing:.02em;}
+  .card .cdist{font-size:11px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums;letter-spacing:.02em;
+    display:flex;flex-direction:column;align-items:flex-end;gap:3px;}
+  .cmatch{display:inline-block;background:var(--gold-bg);color:var(--gold);border:1px solid #ecdfc6;
+    font-weight:600;font-size:11px;border-radius:999px;padding:1px 8px;letter-spacing:0;}
+  .card.active .cmatch{background:#fff;}
+  .ckm{color:var(--muted);}
   .card .cmeta{font-size:12px;color:var(--muted);margin-top:3px;}
   .card .crank{display:inline-block;background:var(--accent);color:#fff;font-size:10px;font-weight:600;
     border-radius:50%;width:19px;height:19px;line-height:19px;text-align:center;margin-right:7px;vertical-align:middle;
@@ -196,10 +201,11 @@
 
   /* ---- mobile ---- */
   #menuBtn{display:none;}
+  .filt-btn,#mtabs{display:none;}
   @media(max-width:780px){
     #app{grid-template-columns:minmax(0,1fr);max-width:100vw;}
     #app > *{min-width:0;}            /* prevent the Leaflet map from blowing out the 1fr track */
-    #map{max-width:100vw;}
+    #map{max-width:100vw;grid-column:1;grid-row:2;}
     /* header wraps: row 1 = ☰ · title · reset, row 2 = full-width search (so nothing runs off-screen) */
     header{flex-wrap:wrap;padding:calc(10px + env(safe-area-inset-top)) 14px 10px;gap:10px 12px;}
     header .brand{flex:1 1 0;min-width:0;}
@@ -210,16 +216,37 @@
     #resetBtn{flex:none;padding:9px 13px;}
     #menuBtn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);
       background:var(--panel);color:var(--gold);border-radius:10px;width:40px;height:40px;font-size:17px;cursor:pointer;flex:none;}
-    aside{position:fixed;top:var(--header-h,104px);left:0;bottom:0;width:86vw;max-width:360px;z-index:1100;
+    /* full-width list/detail drawers so the list is big and easy to read + tap */
+    aside{position:fixed;top:var(--header-h,104px);left:0;bottom:0;width:100vw;max-width:none;z-index:1100;
       transform:translateX(-103%);transition:transform .25s cubic-bezier(.22,.61,.36,1);box-shadow:var(--shadow-lg);}
     aside.open{transform:translateX(0);}
-    #map{grid-column:1;grid-row:2;}
-    .filters{max-height:50%;}
+    /* filters collapsed by default -> the LIST is the first thing you see */
+    .filt-btn{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:10px 14px 2px;
+      padding:11px 14px;border:1px solid var(--line);border-radius:11px;background:var(--panel-2);
+      color:var(--ink);font-family:var(--sans);font-size:13px;font-weight:600;cursor:pointer;}
+    .filt-btn::after{content:"▾";color:var(--gold);transition:transform .15s;}
+    aside.show-filters .filt-btn::after{transform:rotate(180deg);}
+    .filters{display:none;border-bottom:1px solid var(--line);}
+    aside.show-filters .filters{display:block;max-height:46vh;}
+    .listwrap{padding-bottom:70px;}            /* clear the bottom tab bar */
+    /* denser list cards -> more places per screen */
+    .card{padding:9px 16px;}
+    .card .cname{font-size:15px;}
+    .card .cmeta{font-size:11.5px;margin-top:2px;}
     .chip{padding:7px 13px;}
     /* detail = full-width sheet on phones, with a bigger close target */
     #detail{width:100%;max-width:100vw;}
     #detail .dclose{width:36px;height:36px;font-size:20px;}
+    #detail .dbody{padding-bottom:86px;}
     .legend{font-size:11px;padding:8px 11px;line-height:1.6;}
+    /* bottom Map / List switch — one-tap access to the list */
+    #mtabs{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:1200;
+      background:rgba(255,253,249,.97);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+      border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -4px 20px rgba(40,33,20,.10);}
+    #mtabs button{display:flex;align-items:center;justify-content:center;gap:7px;background:none;border:none;
+      font-family:var(--sans);font-size:13.5px;font-weight:600;color:var(--muted);padding:13px 8px;cursor:pointer;}
+    #mtabs button.active{color:var(--gold);}
+    #mtabs button .tn{font-size:11px;background:var(--gold-bg);color:var(--gold);border-radius:999px;padding:1px 7px;font-weight:600;}
   }
 </style>
 </head>
@@ -234,6 +261,7 @@
   </header>
 
   <aside id="sidebar">
+    <button id="filtBtn" class="filt-btn" type="button" aria-expanded="false">⚙ Filters &amp; sort</button>
     <div class="filters">
       <div class="fgroup"><label class="flabel">Type</label><div class="chips" id="f-type"></div></div>
       <div class="fgroup"><label class="flabel">Michelin distinction</label><div class="chips" id="f-michelin"></div></div>
@@ -245,6 +273,7 @@
         <div class="row"><input type="range" id="f-dist" min="0" max="10" step="0.5" value="10"><span class="slider-val" id="distval">any</span></div>
       </div>
       <div class="fgroup"><label class="flabel">Sort by</label><div class="row"><select id="f-sort">
+        <option value="match">★ Best match — for you</option>
         <option value="dist">Distance (near → far)</option>
         <option value="dna">Michelin DNA (high → low)</option>
         <option value="value">Best value first</option>
@@ -263,6 +292,11 @@
   <div class="dhead"><button class="dclose" id="dclose">×</button><h2 id="d-name"></h2><div id="d-badges"></div></div>
   <div class="dbody" id="d-body"></div>
 </div>
+
+<nav id="mtabs" aria-label="Switch between map and list">
+  <button type="button" data-view="map" class="active">🗺 <span>Map</span></button>
+  <button type="button" data-view="list">📋 <span>List</span> <span class="tn" id="mtabN"></span></button>
+</nav>
 
 <!--DATA-->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -344,6 +378,7 @@ function openDetail(i,fly){
   }
   if(p.inspector_note) h+='<div class="note">'+esc(p.inspector_note)+'</div>';
   h+='<dl class="kv">';
+  if(p.match_score!=null) h+='<dt>Match</dt><dd><b>'+p.match_score+'%</b> for you <div class="dnabar"><i style="width:'+p.match_score+'%"></i></div></dd>';
   h+='<dt>Cuisine</dt><dd>'+esc((p.cuisine||[]).join(", ")||"—")+'</dd>';
   h+='<dt>Price</dt><dd>'+esc(p.price||"—")+' · '+(VALUE_LABEL[p.value_tier]||p.value_tier||"")+'</dd>';
   h+='<dt>Distance</dt><dd>'+(p.distance_km!=null?p.distance_km+" km from home":"—")+'</dd>';
@@ -453,8 +488,9 @@ function cardHTML(p){
   const color=p.type==="cafe"?CAFE_COLOR:(TIER_COLOR[p.michelin]||TIER_COLOR.none);
   const tier=(p.michelin&&p.michelin!=="none")?'<span class="badge" style="background:'+color+'">'+esc(TIER_LABEL[p.michelin])+'</span>':"";
   const seen=p.visited?'<span class="cvisited" title="You\'ve been here">✓</span>':"";
+  const match=p.match_score!=null?'<span class="cmatch" title="Best-match score for you">★ '+p.match_score+'</span>':'';
   return '<div class="ctop"><div class="cname">'+(p.rank?'<span class="crank">'+p.rank+'</span>':'')+seen+esc(p.name)+'</div>'
-    +'<div class="cdist">'+(p.distance_km!=null?p.distance_km+" km":"")+'</div></div>'
+    +'<div class="cdist">'+match+(p.distance_km!=null?'<span class="ckm">'+p.distance_km+" km</span>":"")+'</div></div>'
     +'<div class="cmeta">'+tier+esc((p.cuisine||[]).join(", "))+'</div>'
     +'<div class="cmeta">'+(VALUE_LABEL[p.value_tier]||"")+' · '+esc(p.neighborhood||"")+'</div>';
 }
@@ -473,7 +509,7 @@ function hilite(i,on){
 }
 
 /* ---------- filters state ---------- */
-const F = { type:new Set(), michelin:new Set(), value:new Set(), conf:new Set(), vibe:new Set(), cuisine:"", dist:10, q:"", sort:"dist" };
+const F = { type:new Set(), michelin:new Set(), value:new Set(), conf:new Set(), vibe:new Set(), cuisine:"", dist:10, q:"", sort:"match" };
 function uniq(arr){return [...new Set(arr)];}
 
 function chipset(elId, values, key, labelFn){
@@ -506,10 +542,10 @@ document.getElementById("f-sort").onchange=e=>{F.sort=e.target.value;apply();};
 
 document.getElementById("resetBtn").onclick=()=>{
   ["type","michelin","value","conf","vibe"].forEach(k=>F[k].clear());
-  F.cuisine="";F.dist=maxDist;F.q="";F.sort="dist";
+  F.cuisine="";F.dist=maxDist;F.q="";F.sort="match";
   document.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed","false"));
   cuiSel.value="";distEl.value=maxDist;distVal.textContent="any";
-  document.getElementById("q").value="";document.getElementById("f-sort").value="dist";
+  document.getElementById("q").value="";document.getElementById("f-sort").value="match";
   apply();
 };
 
@@ -530,6 +566,7 @@ function matches(p){
 }
 function sortFn(a,b){
   switch(F.sort){
+    case "match": return (b.p.match_score||0)-(a.p.match_score||0) || (a.p.distance_km||0)-(b.p.distance_km||0);
     case "dna": return (b.p.michelin_dna_score||0)-(a.p.michelin_dna_score||0);
     case "value": return (VALUE_RANK[a.p.value_tier]||0)-(VALUE_RANK[b.p.value_tier]||0) || (a.p.distance_km||0)-(b.p.distance_km||0);
     case "name": return (a.p.name||"").localeCompare(b.p.name||"");
@@ -548,6 +585,7 @@ function apply(){
   vis.forEach(r=>listEl.appendChild(r.card));
   document.getElementById("shown").textContent=vis.length;
   document.getElementById("listhead").textContent=vis.length+" places — sorted by "+document.getElementById("f-sort").selectedOptions[0].text.toLowerCase();
+  const tn=document.getElementById("mtabN"); if(tn) tn.textContent=vis.length;
   if(vis.length && bounds.length>1) map.fitBounds(bounds,{padding:[50,50],maxZoom:14});
 }
 
@@ -563,7 +601,28 @@ legend.onAdd=()=>{const d=L.DomUtil.create("div","legend");
 legend.addTo(map);
 
 const sidebar=document.getElementById("sidebar");
-document.getElementById("menuBtn").onclick=()=>sidebar.classList.toggle("open");
+
+/* mobile: bottom Map/List switch + collapsible filters (so the list is the primary thing you see) */
+const mtabs=document.getElementById("mtabs");
+function syncTabs(listOpen){
+  if(!mtabs) return;
+  [...mtabs.querySelectorAll("button")].forEach(b=>b.classList.toggle("active",(b.dataset.view==="list")===listOpen));
+}
+function showList(open){
+  sidebar.classList.toggle("open", open);
+  if(open) detail.classList.remove("open");   // list takes over the screen
+  syncTabs(open);
+}
+document.getElementById("menuBtn").onclick=()=>showList(!sidebar.classList.contains("open"));
+if(mtabs) [...mtabs.querySelectorAll("button")].forEach(b=>b.onclick=()=>{
+  if(b.dataset.view==="map"){ detail.classList.remove("open"); showList(false); }
+  else showList(true);
+});
+const filtBtn=document.getElementById("filtBtn");
+if(filtBtn) filtBtn.onclick=()=>{
+  const o=sidebar.classList.toggle("show-filters");
+  filtBtn.setAttribute("aria-expanded", String(o));
+};
 
 /* keep the filter drawer flush beneath the header even when it wraps to two rows on mobile */
 function setHeaderH(){
@@ -574,8 +633,9 @@ addEventListener("resize", setHeaderH);
 addEventListener("orientationchange", setHeaderH);
 setTimeout(()=>{ map.invalidateSize(); setHeaderH(); }, 60); // fix Leaflet tile sizing after first paint
 
-/* initial sort: if any place has a rank (shortlist), default to rank view */
-if(PLACES.some(p=>p.rank)){ F.sort="rank"; document.getElementById("f-sort").value="rank"; }
+/* initial sort: Best match by default; a ranked shortlist (from /recommend) overrides to rank view */
+if(PLACES.some(p=>p.rank)){ F.sort="rank"; }
+document.getElementById("f-sort").value=F.sort;
 apply();
 </script>
 </body>
