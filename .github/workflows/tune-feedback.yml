@@ -1,0 +1,57 @@
+name: Tune feedback
+
+# A reaction or note sent from the "This weekend" board opens a GitHub Issue (label "feedback",
+# title starts with a feedback emoji). This workflow parses the issue's JSON payload, appends it to
+# data/feedback.jsonl, commits, and closes the issue. Run `/tune` with Claude at home to fold the
+# accumulated feedback into data/taste_profile.md (+ recommender weights). Unlike a visit, feedback
+# doesn't rebuild the map — it only nudges future recommendations once /tune re-derives taste.
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  record:
+    # Access control mirrors log-visit: only the repo owner's own "feedback" issues write to the DB,
+    # so a stranger can never pollute the single-user taste model.
+    if: >-
+      github.event.issue.user.login == github.repository_owner &&
+      ( contains(github.event.issue.labels.*.name, 'feedback') ||
+        startsWith(github.event.issue.title, '❤️') ||
+        startsWith(github.event.issue.title, '🚫') ||
+        startsWith(github.event.issue.title, '💬') )
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Append feedback to data/feedback.jsonl
+        env:
+          BODY: ${{ github.event.issue.body }}
+        run: node scripts/ci_append_feedback.mjs
+
+      - name: Commit & push
+        run: |
+          git config user.name "food-map-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/feedback.jsonl
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "record feedback from weekend board (closes #${{ github.event.issue.number }})"
+            git push
+          fi
+
+      - name: Acknowledge & close issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue close "${{ github.event.issue.number }}" \
+            -c "Noted ✅ and saved to \`data/feedback.jsonl\`. Run \`git pull\` then **\`/tune\`** with Claude to fold this into your taste profile — your weekend picks will start leaning your way. Thanks!"

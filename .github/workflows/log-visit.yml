@@ -35,14 +35,14 @@ jobs:
           BODY: ${{ github.event.issue.body }}
         run: node scripts/ci_append_visit.mjs
 
-      - name: Rebuild the published map (so docs/index.html shows the new visit)
+      - name: Rebuild the published site (map + weekend board reflect the new visit)
         run: node scripts/build_site.mjs
 
       - name: Commit & push
         run: |
           git config user.name "food-map-bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/visits.jsonl docs/index.html
+          git add data/visits.jsonl docs
           if git diff --cached --quiet; then
             echo "Nothing to commit."
           else
