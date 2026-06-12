@@ -37,6 +37,8 @@ function whyListed(p) {
           ? "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted, but priced as a splurge; here as a 'what good looks like' reference more than an everyday pick."
           : "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.";
       }
+      if ((p.source || []).includes("user-pick"))
+        return "Neighbourhood keeper — a cozy everyday café near home, asked for by name. Here for proximity and sustained local love rather than craft pedigree (the second track in CLAUDE.md).";
       return "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.";
   }
 }
@@ -44,6 +46,8 @@ function whyListed(p) {
 // ---- from WHICH WAY was it added? (provenance pathway) ----
 function addedVia(p) {
   const s = p.source || [];
+  if (s.includes("user-pick"))
+    return "Added at the user's request after a why/why-not evaluation (neighbourhood-keeper track).";
   if (s.includes("michelin"))
     return "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).";
   if (s.includes("web-search"))
@@ -114,6 +118,8 @@ const HIGHLIGHTS = {
   "voisine": ["Homely, unpretentious French bistro", "Classic French desserts (e.g. blueberry clafoutis)", "Budget-priced Michelin listing"],
   "aira": ["Beautifully composed two-star cooking", "Striking design near Djurgården", "Tableside finishing from the open kitchen"],
   "solen": ["'Industrial elegance' in the old meat-packing district", "On-trend modern cooking", "Budget-priced for a Michelin listing"],
+  "juniper-tree": ["From-scratch brunch — smoothie bowls, truffle scrambled eggs", "Family-run, living-room cozy", "4.4/5 over 446 Google reviews", "~1.7 km away in Råsunda"],
+  "cafe-volta-sundbyberg": ["Bread baked in-house every morning", "Work-friendly living-room vibe", "4.4/5 over 764 Google reviews", "200 m from home in central Sundbyberg"],
 };
 
 // Fallback if a place isn't in the authored table (e.g. a brand-new hunter find).

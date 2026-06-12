@@ -120,6 +120,95 @@
     "notes": ""
   },
   {
+    "id": "droppens-konditori",
+    "name": "Droppens Konditori",
+    "type": "cafe",
+    "cuisine": [
+      "Fika",
+      "Classic",
+      "Bakery"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": null,
+    "value_tier": "everyday",
+    "lat": 59.3622,
+    "lng": 17.97,
+    "address": "Tulegatan 2, 172 78 Sundbyberg",
+    "neighborhood": "Sundbyberg",
+    "distance_km": 0.1,
+    "vibe_tags": [
+      "fika",
+      "classic",
+      "neighbourhood",
+      "konditori",
+      "quiet"
+    ],
+    "michelin_dna_score": 0.62,
+    "confidence": "candidate",
+    "inspector_note": "Family-run konditori on Tulegatan since the 1950s; award-winning semlor many call the best in Stockholm. (approx coords)",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Family-run konditori on Tulegatan since the 1950s; award-winning semlor many call the best in Stockholm",
+      "fika",
+      "classic",
+      "neighbourhood"
+    ],
+    "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
+    "source": [
+      "web-search"
+    ],
+    "source_url": "https://www.droppenskonditori.se/",
+    "last_verified": "2026-06-12",
+    "notes": "Classic Swedish konditori craft: semlor, prinsesstårta, sourdough buns. Open from 06:00 weekdays."
+  },
+  {
+    "id": "cafe-volta-sundbyberg",
+    "name": "Café Volta Sundbyberg",
+    "type": "cafe",
+    "cuisine": [
+      "Fika",
+      "Lunch",
+      "Brunch"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": "100-200 SEK",
+    "value_tier": "everyday",
+    "lat": 59.3606,
+    "lng": 17.9709,
+    "address": "Prästgårdsgatan 2, Sundbyberg",
+    "neighborhood": "Sundbyberg",
+    "distance_km": 0.1,
+    "vibe_tags": [
+      "cozy",
+      "fika",
+      "work-friendly",
+      "neighbourhood",
+      "brunch"
+    ],
+    "michelin_dna_score": 0.3,
+    "confidence": "candidate",
+    "inspector_note": null,
+    "why_listed": "Neighbourhood keeper — a cozy everyday café near home, asked for by name. Here for proximity and sustained local love rather than craft pedigree (the second track in CLAUDE.md).",
+    "highlights": [
+      "Bread baked in-house every morning",
+      "Work-friendly living-room vibe",
+      "4.4/5 over 764 Google reviews",
+      "200 m from home in central Sundbyberg"
+    ],
+    "accepts_reservations": null,
+    "added_via": "Added at the user's request after a why/why-not evaluation (neighbourhood-keeper track).",
+    "source": [
+      "web",
+      "user-pick"
+    ],
+    "source_url": "https://cafevolta.se/",
+    "last_verified": "2026-06-12",
+    "notes": "User-requested add 2026-06-12 (neighbourhood-keeper track, not craft track). Family-run mini-chain (vólta = Greek for lets go); in-house daily bread, Johan & Nyström beans; waffles, avo toast, work-friendly. 4.4/5 over 764 Google reviews. Some service-wait complaints. Coords approximate."
+  },
+  {
     "id": "ristorante-parma",
     "name": "Ristorante Parma",
     "type": "restaurant",
@@ -157,6 +246,137 @@
     "source_url": "https://viewstockholm.com/restaurants-sundbyberg/",
     "last_verified": "2026-06-12",
     "notes": ""
+  },
+  {
+    "id": "cafe-boulevard",
+    "name": "Café Boulevard",
+    "type": "cafe",
+    "cuisine": [
+      "Fika",
+      "Bakery",
+      "Lunch"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": null,
+    "value_tier": "everyday",
+    "lat": 59.3632,
+    "lng": 17.9722,
+    "address": "Esplanaden 17, 172 68 Sundbyberg",
+    "neighborhood": "Sundbyberg",
+    "distance_km": 0.2,
+    "vibe_tags": [
+      "fika",
+      "konditori",
+      "neighbourhood",
+      "classic",
+      "from-scratch"
+    ],
+    "michelin_dna_score": 0.6,
+    "confidence": "candidate",
+    "inspector_note": "Sundbyberg konditori since 1941 — everything made from scratch in the basement bakery, first-class KRAV-certified ingredients. (approx coords)",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Sundbyberg konditori since 1941 — everything made from scratch in the basement bakery, first-class KRAV-certified ing…",
+      "fika",
+      "konditori",
+      "neighbourhood"
+    ],
+    "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
+    "source": [
+      "web-search"
+    ],
+    "source_url": "https://cafeboulevard.se/",
+    "last_verified": "2026-06-12",
+    "notes": "Lunch, tårtor, bakelser, smörgåsar. Open from 05:00 weekdays."
+  },
+  {
+    "id": "bageri-passion",
+    "name": "Bageri Passion",
+    "type": "cafe",
+    "cuisine": [
+      "Bakery",
+      "Fika"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": null,
+    "value_tier": "everyday",
+    "lat": 59.3598,
+    "lng": 17.9663,
+    "address": "Landsvägen 45, 172 65 Sundbyberg",
+    "neighborhood": "Sundbyberg",
+    "distance_km": 0.3,
+    "vibe_tags": [
+      "bakery",
+      "fika",
+      "neighbourhood",
+      "stone-oven",
+      "organic"
+    ],
+    "michelin_dna_score": 0.68,
+    "confidence": "candidate",
+    "inspector_note": "Organic stone-oven bakery in Sundbyberg — exclusively ecological flour, real butter and cream; nearly all bread from the historic stone oven. (approx coords)",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Organic stone-oven bakery in Sundbyberg — exclusively ecological flour, real butter and cream; nearly all bread from …",
+      "bakery",
+      "fika",
+      "neighbourhood"
+    ],
+    "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
+    "source": [
+      "web-search"
+    ],
+    "source_url": "https://www.bageripassion.se/",
+    "last_verified": "2026-06-12",
+    "notes": "Daily on-site baking Mon-Sun. Ingredient-obsessed craft baking a short walk from home."
+  },
+  {
+    "id": "juniper-tree",
+    "name": "Juniper Tree",
+    "type": "cafe",
+    "cuisine": [
+      "Brunch",
+      "Fika",
+      "Lunch"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": "100-200 SEK",
+    "value_tier": "everyday",
+    "lat": 59.363,
+    "lng": 18,
+    "address": "Råsundavägen 139, Solna",
+    "neighborhood": "Råsunda (Solna)",
+    "distance_km": 1.7,
+    "vibe_tags": [
+      "cozy",
+      "brunch",
+      "neighbourhood",
+      "fika"
+    ],
+    "michelin_dna_score": 0.35,
+    "confidence": "candidate",
+    "inspector_note": null,
+    "why_listed": "Neighbourhood keeper — a cozy everyday café near home, asked for by name. Here for proximity and sustained local love rather than craft pedigree (the second track in CLAUDE.md).",
+    "highlights": [
+      "From-scratch brunch — smoothie bowls, truffle scrambled eggs",
+      "Family-run, living-room cozy",
+      "4.4/5 over 446 Google reviews",
+      "~1.7 km away in Råsunda"
+    ],
+    "accepts_reservations": null,
+    "added_via": "Added at the user's request after a why/why-not evaluation (neighbourhood-keeper track).",
+    "source": [
+      "web",
+      "user-pick"
+    ],
+    "source_url": "https://www.junipertree.se/",
+    "last_verified": "2026-06-12",
+    "notes": "User-requested add 2026-06-12 (neighbourhood-keeper track, not craft track). Family-run by Malin & Pauline; from-scratch food, small suppliers, organic coffee, raw food + weekend brunch. 4.4/5 over 446 Google reviews. Coords approximate."
   },
   {
     "id": "essence-1203656",
@@ -766,6 +986,50 @@
     "notes": ""
   },
   {
+    "id": "socker-sucker",
+    "name": "Socker Sucker",
+    "type": "cafe",
+    "cuisine": [
+      "Patisserie",
+      "Fika",
+      "Bakery"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": null,
+    "value_tier": "everyday",
+    "lat": 59.3399,
+    "lng": 18.0567,
+    "address": "Drottninggatan 93, 113 60 Stockholm",
+    "neighborhood": "Vasastan",
+    "distance_km": 5.4,
+    "vibe_tags": [
+      "patisserie",
+      "chef-driven",
+      "craft",
+      "fika",
+      "minimalist"
+    ],
+    "michelin_dna_score": 0.82,
+    "confidence": "candidate",
+    "inspector_note": "Patisserie by world-class pastry chefs Bedros Kabranian and Frida Bäcke — voted Konditorernas Konditori every year since 2022; made dessert and bread for the 2024 Nobel dinner. (approx coords)",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Patisserie by world-class pastry chefs Bedros Kabranian and Frida Bäcke — voted Konditorernas Konditori every year si…",
+      "patisserie",
+      "chef-driven",
+      "craft"
+    ],
+    "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
+    "source": [
+      "web-search"
+    ],
+    "source_url": "https://thatsup.co.uk/stockholm/cafe/socker-sucker/",
+    "last_verified": "2026-06-12",
+    "notes": "Classic Swedish bakverk reworked at haute-patisserie level, still bakery-priced. Opened 2022."
+  },
+  {
     "id": "rolfs-kok",
     "name": "Rolfs Kök",
     "type": "restaurant",
@@ -871,6 +1135,51 @@
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/farang",
     "last_verified": "2026-06-12",
     "notes": ""
+  },
+  {
+    "id": "green-rabbit",
+    "name": "Green Rabbit",
+    "type": "cafe",
+    "cuisine": [
+      "Bakery",
+      "Swedish",
+      "Fika"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": null,
+    "value_tier": "everyday",
+    "lat": 59.3398,
+    "lng": 18.0595,
+    "address": "Tegnérgatan 17, 111 40 Stockholm",
+    "neighborhood": "Vasastan",
+    "distance_km": 5.6,
+    "vibe_tags": [
+      "bakery",
+      "chef-driven",
+      "rye",
+      "organic",
+      "fika",
+      "pared-back"
+    ],
+    "michelin_dna_score": 0.85,
+    "confidence": "candidate",
+    "inspector_note": "Rye-bread bakery-café by two-star chef Mathias Dahlgren and Martin Berg — traditional techniques, organic grain, Swedish smörrebröd and soup lunch. (approx coords)",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Rye-bread bakery-café by two-star chef Mathias Dahlgren and Martin Berg — traditional techniques, organic grain, Swed…",
+      "bakery",
+      "chef-driven",
+      "rye"
+    ],
+    "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
+    "source": [
+      "web-search"
+    ],
+    "source_url": "https://mdghs.se/en/green-rabbit/",
+    "last_verified": "2026-06-12",
+    "notes": "Direct chef pedigree from the starred set; near the Rolfs Kök / Bib cluster on Tegnérgatan. Mon-Fri 07:30-15, Sat 09-14."
   },
   {
     "id": "allegrine",
@@ -1897,6 +2206,50 @@
     "notes": ""
   },
   {
+    "id": "frost-bageri",
+    "name": "Frost Bageri",
+    "type": "cafe",
+    "cuisine": [
+      "Bakery",
+      "Fika"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": null,
+    "value_tier": "everyday",
+    "lat": 59.3384,
+    "lng": 18.0912,
+    "address": "Karlavägen 106, 115 26 Stockholm",
+    "neighborhood": "Östermalm",
+    "distance_km": 7.3,
+    "vibe_tags": [
+      "bakery",
+      "craft",
+      "sourdough",
+      "croissant",
+      "stone-milled",
+      "new-opening"
+    ],
+    "michelin_dna_score": 0.8,
+    "confidence": "candidate",
+    "inspector_note": "Hantverk bakery at Garnisonen by baking world champion Håkan Johansson Frost — long-fermented croissants, ancient grains (spelt, emmer, rye) milled on site. (approx coords)",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Hantverk bakery at Garnisonen by baking world champion Håkan Johansson Frost — long-fermented croissants, ancient gra…",
+      "bakery",
+      "craft",
+      "sourdough"
+    ],
+    "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
+    "source": [
+      "web-search"
+    ],
+    "source_url": "https://thatsup.co.uk/stockholm/bakery/frost-bageri/",
+    "last_verified": "2026-06-12",
+    "notes": "Opened Oct 2025, instant hit; NYT-featured among 5 new Stockholm bakeries. Second branch planned in Vasastan."
+  },
+  {
     "id": "persona",
     "name": "Persona",
     "type": "restaurant",
@@ -2037,6 +2390,51 @@
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/ulla-winbladh",
     "last_verified": "2026-06-12",
     "notes": ""
+  },
+  {
+    "id": "francesco-forno-e-cucina",
+    "name": "Francesco — Forno e Cucina",
+    "type": "cafe",
+    "cuisine": [
+      "Italian",
+      "Bakery",
+      "Coffee"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": null,
+    "value_tier": "everyday",
+    "lat": 59.3133,
+    "lng": 18.0807,
+    "address": "Åsögatan 161, 116 32 Stockholm",
+    "neighborhood": "Södermalm",
+    "distance_km": 8.2,
+    "vibe_tags": [
+      "bakery",
+      "chef-driven",
+      "italian",
+      "new-opening",
+      "neighbourhood",
+      "espresso"
+    ],
+    "michelin_dna_score": 0.7,
+    "confidence": "candidate",
+    "inspector_note": "Neapolitan chef Francesco Giudice bakes maritozzi daily (traditional plus weekly Italian/Swedish specials), cornetti, focaccia; espresso and simple pasta. (approx coords)",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Neapolitan chef Francesco Giudice bakes maritozzi daily (traditional plus weekly Italian/Swedish specials), cornetti,…",
+      "bakery",
+      "chef-driven",
+      "italian"
+    ],
+    "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
+    "source": [
+      "web-search"
+    ],
+    "source_url": "https://www.francescofornoecucina.se/",
+    "last_verified": "2026-06-12",
+    "notes": "Opened Nov 2025 in SoFo near Bib seed Bar Agrikultur. Walk-ins only. NYT-featured new bakery."
   },
   {
     "id": "bar-agrikultur",
