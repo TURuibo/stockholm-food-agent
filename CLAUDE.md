@@ -2,8 +2,8 @@
 
 A personalized café/restaurant recommender for **Stockholm**, home base **Sundbyberg**.
 Seeds from the Michelin Guide, then auto-grows a list of **Michelin-adjacent value** places —
-similar DNA to starred spots but **not yet famous and cheaper**. Learns the user's taste from
-feedback. This file is loaded every session; read it before acting.
+similar DNA to starred spots but **cheaper**. Learns the user's taste from feedback. This file is
+loaded every session; read it before acting.
 
 ## Home base
 - Sundbyberg, Stockholm. Coordinates: **59.3614, 17.9710** (`HOME` in `scripts/geo.mjs`).
@@ -14,6 +14,8 @@ The user cannot eat fine-dining all the time. The agent's job is to **learn what
 places good** (`data/michelin_fingerprint.md`) and then **recommend the cheaper, not-yet-starred
 cousins**. A 3-star palace is "best" but ranks **low** by default because it violates "not as
 expensive." **Bib Gourmand** (Michelin's own good-value badge) is the gold seed.
+**Fame is not a disqualifier** (user-confirmed 2026-06-12): famous classics are welcome if the
+craft and the price are right — **price is the gate, not obscurity**.
 
 **Second track — neighbourhood keepers** (user-confirmed 2026-06-12): cozy, well-loved everyday
 cafés close to Sundbyberg (≲2 km) also belong on the list even without craft pedigree — e.g.
