@@ -4,6 +4,10 @@ A personalized café/restaurant recommender built with Claude Code. Home base: *
 It seeds from the **Michelin Guide**, then auto-grows a list of **"Michelin-adjacent value"** places
 — similar DNA to starred spots but **not yet famous and cheaper** — and learns your taste from feedback.
 
+🗺️ **Live map:** https://turuibo.github.io/stockholm-food-agent/
+(rebuild with `node scripts/build_site.mjs`, which writes `docs/index.html` served by GitHub Pages.
+Personal files — `data/taste_profile.md`, `visits.jsonl`, `suggestions.jsonl` — are gitignored and stay local.)
+
 ## Quick start
 ```
 /onboard                      # 4-question taste interview (do this first)
