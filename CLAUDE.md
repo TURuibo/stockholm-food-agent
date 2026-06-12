@@ -15,6 +15,12 @@ places good** (`data/michelin_fingerprint.md`) and then **recommend the cheaper,
 cousins**. A 3-star palace is "best" but ranks **low** by default because it violates "not as
 expensive." **Bib Gourmand** (Michelin's own good-value badge) is the gold seed.
 
+**Second track — neighbourhood keepers** (user-confirmed 2026-06-12): cozy, well-loved everyday
+cafés close to Sundbyberg (≲2 km) also belong on the list even without craft pedigree — e.g.
+Juniper Tree (Råsunda), Café Volta (Sundbyberg). They carry an honest low `michelin_dna_score`
+(0.25–0.45) and cozy/work-friendly/brunch vibe tags, so they win on "near home / casual / brunch"
+asks but never displace craft picks. Full criteria: `.claude/skills/hunt-gems/SKILL.md`.
+
 ## Recommendation engine (content-based; one user, no collaborative filtering)
 Pipeline, in order — see `.claude/skills/recommend/SKILL.md` for the full spec:
 1. **Candidate generation** — pull from `data/places.json` by intent (type, area, cuisine).
