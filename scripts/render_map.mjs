@@ -17,6 +17,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const TEMPLATE = join(__dirname, "..", "map", "template.html");
 const VIEW = join(__dirname, "..", "map", "view.html");
 const PLACES = join(__dirname, "..", "data", "places.json");
+const CONFIG = join(__dirname, "..", "data", "config.json");
 
 const args = process.argv.slice(2);
 const opt = (k) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : null; };
@@ -28,7 +29,11 @@ const title = opt("--title") || (typeFilter ? `Stockholm ${typeFilter}s` : "Stoc
 let places = JSON.parse(await readFile(inFile || PLACES, "utf8"));
 if (typeFilter) places = places.filter((p) => p.type === typeFilter);
 
-const data = { home: HOME, title, places };
+// feedback config (review form -> GitHub Issue). Optional; map works without it.
+let feedback = null;
+try { feedback = JSON.parse(await readFile(CONFIG, "utf8")).feedback || null; } catch { /* no config */ }
+
+const data = { home: HOME, title, places, feedback };
 const template = await readFile(TEMPLATE, "utf8");
 const inject = `<script>window.FOOD_DATA = ${JSON.stringify(data)};</script>`;
 const html = template.replace("<!--DATA-->", inject);

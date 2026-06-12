@@ -1,0 +1,51 @@
+name: Log visit
+
+# A review submitted from the Stockholm Food Map opens a GitHub Issue (title starts with
+# "🍽️ visit:", label "visit"). This workflow parses the issue's JSON payload, appends it to
+# data/visits.jsonl, commits, and closes the issue. `git pull` at home then syncs the review.
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  log:
+    # Only act on review issues (label OR title marker — robust if the label doesn't exist yet).
+    if: >-
+      contains(github.event.issue.labels.*.name, 'visit') ||
+      startsWith(github.event.issue.title, '🍽️ visit:')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Append visit to data/visits.jsonl
+        env:
+          BODY: ${{ github.event.issue.body }}
+        run: node scripts/ci_append_visit.mjs
+
+      - name: Commit & push
+        run: |
+          git config user.name "food-map-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/visits.jsonl
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "log visit from map (closes #${{ github.event.issue.number }})"
+            git push
+          fi
+
+      - name: Acknowledge & close issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue close "${{ github.event.issue.number }}" \
+            -c "Logged ✅ to \`data/visits.jsonl\` and committed. Run \`git pull\` at home to sync — your taste profile updates after a few reviews. Thanks!"
