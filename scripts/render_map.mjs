@@ -18,6 +18,7 @@ const TEMPLATE = join(__dirname, "..", "map", "template.html");
 const VIEW = join(__dirname, "..", "map", "view.html");
 const PLACES = join(__dirname, "..", "data", "places.json");
 const CONFIG = join(__dirname, "..", "data", "config.json");
+const VISITS = join(__dirname, "..", "data", "visits.jsonl");
 
 const args = process.argv.slice(2);
 const opt = (k) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : null; };
@@ -32,6 +33,30 @@ if (typeFilter) places = places.filter((p) => p.type === typeFilter);
 // feedback config (review form -> GitHub Issue). Optional; map works without it.
 let feedback = null;
 try { feedback = JSON.parse(await readFile(CONFIG, "utf8")).feedback || null; } catch { /* no config */ }
+
+// Join visit history (data/visits.jsonl) onto each place so the map can show a "✓ Visited"
+// badge plus your ratings/comments. NOTE: docs/index.html is published on GitHub Pages, so any
+// comment embedded here is PUBLIC. Each place gets p.visited = { count, last:{rating,comment,…},
+// log:[…newest-first] }. Skipped silently when there are no visits yet.
+try {
+  const lines = (await readFile(VISITS, "utf8")).split("\n").filter((l) => l.trim());
+  const byId = new Map();
+  for (const line of lines) {
+    let v; try { v = JSON.parse(line); } catch { continue; }
+    if (!v || !v.id) continue;
+    (byId.get(v.id) || byId.set(v.id, []).get(v.id)).push(v);
+  }
+  for (const p of places) {
+    const log = byId.get(p.id);
+    if (!log || !log.length) continue;
+    log.sort((a, b) => String(b.ts || "").localeCompare(String(a.ts || ""))); // newest first
+    const slim = log.map((v) => ({
+      ts: v.ts || null, rating: v.rating ?? null, comment: v.comment || "",
+      occasion: v.occasion || "", would_return: v.would_return ?? null, companions: v.companions || "",
+    }));
+    p.visited = { count: slim.length, last: slim[0], log: slim };
+  }
+} catch { /* no visits.jsonl yet — map renders without visited state */ }
 
 const data = { home: HOME, title, places, feedback };
 const template = await readFile(TEMPLATE, "utf8");
