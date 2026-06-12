@@ -65,6 +65,11 @@ PRICE_CEILING = mid   # default max value_tier; "splurge" only when explicitly a
 - Be polite to Michelin: all fetching goes through `scripts/lib/fetch_polite.mjs` (browser UA,
   delay, cache). Never hit disallowed query-param URLs (sort/search/showMap); use the sitemap.
 - After changing `places.json`, the map (`map/view.html`) is stale — re-render before showing it.
+- **Published site** (`scripts/build_site.mjs` → GitHub Pages): `docs/index.html` is the phone-first
+  **"This weekend" board** (a few café + restaurant picks, built by `scripts/build_weekend.mjs`);
+  `docs/map.html` is the full interactive map. They cross-link. `.github/workflows/daily-weekend.yml`
+  rebuilds and commits the site **every day** (cron), so the board stays fresh with no manual trigger.
+  In CI the picks come from the deterministic core only (taste profile is gitignored/absent).
 
 ## Commands (in `.claude/commands/`)
 `/onboard` seed taste · `/recommend [ctx]` core · `/nearby` walking distance · `/visited` log+learn ·

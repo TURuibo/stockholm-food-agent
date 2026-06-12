@@ -4,9 +4,15 @@ A personalized café/restaurant recommender built with Claude Code. Home base: *
 It seeds from the **Michelin Guide**, then auto-grows a list of **"Michelin-adjacent value"** places
 — similar DNA to starred spots but **not yet famous and cheaper** — and learns your taste from feedback.
 
-🗺️ **Live map:** https://turuibo.github.io/stockholm-food-agent/
-(rebuild with `node scripts/build_site.mjs`, which writes `docs/index.html` served by GitHub Pages.
-Personal files — `data/taste_profile.md`, `visits.jsonl`, `suggestions.jsonl` — are gitignored and stay local.)
+📱 **This weekend (phone-first):** https://turuibo.github.io/stockholm-food-agent/
+— a few café + restaurant picks for the upcoming weekend, **auto-rebuilt every day** by a GitHub
+Actions cron (`.github/workflows/daily-weekend.yml`), so you just open the page; nothing to trigger.
+🗺️ **Full map:** https://turuibo.github.io/stockholm-food-agent/map.html (linked from the board).
+
+Rebuild both with `node scripts/build_site.mjs` — it writes `docs/index.html` (weekend board) and
+`docs/map.html` (full map), served by GitHub Pages. `data/taste_profile.md` and `suggestions.jsonl`
+are gitignored and stay local, so the daily CI rebuild ranks by the deterministic core (Michelin-DNA
+· value · near-home), minus places you've visited recently (`data/visits.jsonl` is tracked).
 
 ## Quick start
 ```
