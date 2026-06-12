@@ -1,0 +1,21 @@
+# Generated map view (rebuilt from data each run)
+map/view.html
+
+# Cached Michelin fetches (provenance kept in places.json source_url)
+data/cache/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# OS
+Thumbs.db
+.DS_Store
+
+# transient recommendation shortlist
+data/.last_shortlist.json
+
+# Personal data — keep local, never publish (use the .example template instead)
+data/taste_profile.md
+data/visits.jsonl
+data/suggestions.jsonl

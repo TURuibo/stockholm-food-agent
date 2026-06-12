@@ -1,0 +1,15 @@
+{
+  "_comment": "Machine-readable tuning for the recommender. Edit to retune; CLAUDE.md documents these.",
+  "weights": {
+    "taste": 1.0,
+    "dna": 0.7,
+    "vibe": 0.6,
+    "value": 0.8,
+    "dist": 0.3
+  },
+  "explore": 0.2,
+  "price_ceiling": "mid",
+  "value_score": { "everyday": 1.0, "mid": 0.7, "splurge": 0.15 },
+  "anti_repeat_days": 21,
+  "shortlist_size": 6
+}

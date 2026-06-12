@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Stockholm Food Map</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+  html, body { margin: 0; height: 100%; font-family: system-ui, sans-serif; }
+  #map { height: 100%; }
+  .legend, .titlebox {
+    background: rgba(255,255,255,.94); padding: 8px 11px; border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.3); font-size: 12px; line-height: 1.5;
+  }
+  .titlebox { font-size: 13px; max-width: 260px; }
+  .titlebox b { font-size: 14px; }
+  .dot { display:inline-block; width:11px; height:11px; border-radius:50%; margin-right:5px; vertical-align:middle; }
+  .pop b { font-size: 14px; }
+  .pop .why { color:#0a7d34; margin-top:4px; }
+  .pop .meta { color:#444; }
+  .badge { display:inline-block; padding:1px 6px; border-radius:10px; font-size:11px; color:#fff; margin-right:4px; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<!--DATA-->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const D = window.FOOD_DATA || { home:{lat:59.3614,lng:17.9710,name:"Sundbyberg"}, places:[], title:"" };
+
+// color by Michelin tier; cafés get a distinct ring
+const TIER_COLOR = {
+  "three-star":"#b8002e", "two-star":"#b8002e", "one-star":"#d4341f",
+  "bib":"#e07b00", "none":"#2f7fd6"
+};
+const VALUE_LABEL = { everyday:"💰 everyday", mid:"💰💰 mid", splurge:"💰💰💰 splurge" };
+
+const map = L.map("map");
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  maxZoom: 19, attribution: "&copy; OpenStreetMap"
+}).addTo(map);
+
+// home marker + distance rings (1/3/5 km)
+const home = D.home;
+L.circleMarker([home.lat, home.lng], { radius:9, color:"#111", weight:2, fillColor:"#111", fillOpacity:1 })
+  .addTo(map).bindPopup("<b>🏠 " + home.name + "</b><br>home base");
+[1,3,5].forEach(km => L.circle([home.lat,home.lng], {
+  radius: km*1000, color:"#888", weight:1, fill:false, dashArray:"4 6"
+}).addTo(map).bindTooltip(km+" km", {permanent:false}));
+
+const bounds = [[home.lat, home.lng]];
+for (const p of D.places) {
+  if (p.lat == null || p.lng == null) continue;
+  const color = TIER_COLOR[p.michelin] || "#2f7fd6";
+  const isCafe = p.type === "cafe";
+  const m = L.circleMarker([p.lat, p.lng], {
+    radius: p.rank ? 9 : 6, color: isCafe ? "#6b3fa0" : color,
+    weight: p.rank ? 3 : 1.5, fillColor: color, fillOpacity: .85
+  }).addTo(map);
+  const star = p.michelin && p.michelin !== "none"
+    ? '<span class="badge" style="background:'+color+'">'+p.michelin.replace("-"," ")+'</span>' : "";
+  const why = p.reason ? '<div class="why">➜ '+p.reason+'</div>' : "";
+  const rk = p.rank ? '#'+p.rank+' · ' : '';
+  m.bindPopup('<div class="pop"><b>'+rk+(p.name||"")+'</b><br>'
+    + star + '<span class="meta">'+(p.cuisine||[]).join(", ")+'</span><br>'
+    + '<span class="meta">'+(VALUE_LABEL[p.value_tier]||p.value_tier||"")
+    + ' · '+(p.distance_km!=null?p.distance_km+" km":"")+'</span>'
+    + why + '</div>');
+  bounds.push([p.lat, p.lng]);
+}
+map.fitBounds(bounds, { padding:[40,40], maxZoom: 14 });
+
+// title + legend
+const title = L.control({position:"topright"});
+title.onAdd = () => { const d=L.DomUtil.create("div","titlebox");
+  d.innerHTML = "<b>"+(D.title||"Stockholm Food Map")+"</b><br>"+D.places.length+" places · home: "+home.name; return d; };
+title.addTo(map);
+
+const legend = L.control({position:"bottomright"});
+legend.onAdd = () => { const d=L.DomUtil.create("div","legend");
+  d.innerHTML =
+    '<span class="dot" style="background:#b8002e"></span>Star<br>'+
+    '<span class="dot" style="background:#e07b00"></span>Bib Gourmand (value)<br>'+
+    '<span class="dot" style="background:#2f7fd6"></span>Unrated (often best value)<br>'+
+    '<span class="dot" style="background:#6b3fa0"></span>Café'; return d; };
+legend.addTo(map);
+</script>
+</body>
+</html>
