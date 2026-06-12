@@ -159,6 +159,11 @@
   .dlinks a{font-size:12.5px;font-weight:500;text-decoration:none;padding:9px 14px;border:1px solid var(--line);
     border-radius:10px;background:var(--panel);color:var(--ink);transition:all .15s;letter-spacing:.01em;}
   .dlinks a:hover{background:var(--ink);color:var(--gold-bg);border-color:var(--ink);transform:translateY(-1px);}
+  /* "Show on map" — hidden on desktop (map is already beside the detail); shown on mobile */
+  .showmap{display:none;width:100%;align-items:center;justify-content:center;gap:8px;margin:0 0 16px;
+    padding:13px;border:1px solid var(--gold-soft);border-radius:11px;background:var(--gold-bg);color:var(--gold);
+    font-family:var(--sans);font-size:14px;font-weight:600;cursor:pointer;letter-spacing:.02em;}
+  .showmap:active{transform:translateY(1px);}
   .vchips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;}
   .vchips span{font-size:11px;background:var(--gold-bg);color:var(--gold);border:1px solid #ecdfc6;
     padding:3px 10px;border-radius:999px;letter-spacing:.02em;}
@@ -234,9 +239,10 @@
     .card .cname{font-size:15px;}
     .card .cmeta{font-size:11.5px;margin-top:2px;}
     .chip{padding:7px 13px;}
-    /* detail = full-width sheet on phones, with a bigger close target */
-    #detail{width:100%;max-width:100vw;}
+    /* detail = full-width sheet on phones, ABOVE the list drawer (z 1100) but below the tabs (z 1200) */
+    #detail{width:100%;max-width:100vw;z-index:1150;}
     #detail .dclose{width:36px;height:36px;font-size:20px;}
+    .showmap{display:flex;}
     #detail .dbody{padding-bottom:86px;}
     .legend{font-size:11px;padding:8px 11px;line-height:1.6;}
     /* bottom Map / List switch — one-tap access to the list */
@@ -351,6 +357,7 @@ const REC = PLACES.map((p,i)=>{
 
 /* ---------- detail drawer ---------- */
 const detail = document.getElementById("detail");
+let lastIdx = null;   // the place currently shown in the detail (for "Show on map" / Map tab)
 function gmapLink(p){
   const dest = encodeURIComponent((p.address?p.address+", ":"")+(p.name||"")+", Stockholm");
   return "https://www.google.com/maps/dir/?api=1&origin="+HOME.lat+","+HOME.lng+"&destination="+dest;
@@ -368,7 +375,7 @@ function openDetail(i,fly){
   document.getElementById("d-badges").innerHTML=badges;
 
   const dna = Math.round((p.michelin_dna_score||0)*100);
-  let h="";
+  let h='<button id="d-showmap" class="showmap" type="button">📍 Show on map</button>';
   if(p.visited) h+=visitedHTML(p.visited);
   if(p.reason) h+='<div class="why">➜ '+esc(p.reason)+'</div>';
   if(p.why_listed) h+='<div class="why why-listed"><b>Why it’s on your list:</b> '+esc(p.why_listed)+'</div>';
@@ -401,10 +408,25 @@ function openDetail(i,fly){
   document.getElementById("d-body").innerHTML=h;
   document.getElementById("d-body").scrollTop=0;
   wireReviewForm(p);
+  const _sm=document.getElementById("d-showmap"); if(_sm) _sm.onclick=()=>revealOnMap(i);
+  lastIdx=i;
   detail.classList.add("open");
   setActive(i);
   if(fly!==false){ map.setView([p.lat,p.lng], Math.max(map.getZoom(),14),{animate:true}); }
   marker.openPopup&&null;
+}
+
+/* Close the overlays and show this place on the map, centred + highlighted. On mobile the map is
+   hidden behind the list/detail, so this is how you "see where it is" from the detail. */
+function revealOnMap(i){
+  const r=REC[i]; if(!r) return;
+  detail.classList.remove("open");
+  sidebar.classList.remove("open");
+  if(typeof syncTabs==="function") syncTabs(false);
+  map.invalidateSize();
+  map.setView([r.p.lat,r.p.lng], Math.max(map.getZoom(),15), {animate:true});
+  if(r.marker.openTooltip) r.marker.openTooltip();
+  hilite(i,true); setTimeout(()=>hilite(i,false), 1800);
 }
 
 /* ---------- visit history (read-only: your logged ratings + comments) ---------- */
@@ -615,8 +637,10 @@ function showList(open){
 }
 document.getElementById("menuBtn").onclick=()=>showList(!sidebar.classList.contains("open"));
 if(mtabs) [...mtabs.querySelectorAll("button")].forEach(b=>b.onclick=()=>{
-  if(b.dataset.view==="map"){ detail.classList.remove("open"); showList(false); }
-  else showList(true);
+  if(b.dataset.view==="map"){
+    if(detail.classList.contains("open") && lastIdx!=null) revealOnMap(lastIdx);   // jump to the place you were viewing
+    else { detail.classList.remove("open"); showList(false); }
+  } else showList(true);
 });
 const filtBtn=document.getElementById("filtBtn");
 if(filtBtn) filtBtn.onclick=()=>{
