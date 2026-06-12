@@ -22,10 +22,16 @@ are gitignored and stay local, so the daily CI rebuild ranks by the deterministi
 /visited lilla-ego +2 cozy, great wine   # log feedback -> it learns
 /hunt                         # discover new value gems (grows the list)
 /stats                        # suggested -> visited -> liked hit-rate
+/tune  more cozy cafés near home, less seafood   # fold feedback into your taste
 /map                          # rebuild map/view.html and open it in a browser
 ```
 Other commands: `/taste` (show/edit profile), `/veto <thing>` (never again),
 `/refresh-michelin` (re-scrape).
+
+**Feedback loop:** on the phone board, tap ❤️/🚫 on a pick or type a request in "💬 Tune my picks" —
+it opens a prefilled GitHub Issue that `tune-feedback.yml` records to `data/feedback.jsonl`. Back home,
+`/tune` reads the accumulated reactions + your visits, asks a couple of quick questions, and updates
+`data/taste_profile.md` (and recommender weights) so the picks lean your way.
 
 ## How it recommends (content-based pipeline)
 1. **Candidate generation** from `data/places.json`.

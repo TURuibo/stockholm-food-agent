@@ -110,6 +110,39 @@
     border-color:var(--accent-deep);box-shadow:0 3px 10px rgba(124,15,39,.26);}
   .links a:active{transform:translateY(1px);}
 
+  /* ---- per-card reactions ---- */
+  .react{display:flex;align-items:center;gap:8px;margin-top:13px;padding-top:13px;border-top:1px dashed var(--line);}
+  .react .rl{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--faint);font-weight:600;margin-right:auto;}
+  .react button{font-family:var(--sans);font-size:12.5px;font-weight:600;cursor:pointer;border:1px solid var(--line);
+    background:var(--panel);color:var(--muted);border-radius:999px;padding:7px 13px;transition:all .14s;}
+  .react button:active{transform:translateY(1px);}
+  .react button.up[aria-pressed="true"]{background:#eef6f0;border-color:var(--green);color:var(--green);}
+  .react button.down[aria-pressed="true"]{background:#fdeef1;border-color:var(--accent);color:var(--accent);}
+  .react button[aria-pressed="true"]{box-shadow:inset 0 0 0 1px currentColor;}
+
+  /* ---- tune-my-picks box ---- */
+  details.tune{margin:16px 0 4px;border:1px solid var(--line);border-radius:16px;overflow:hidden;
+    background:linear-gradient(180deg,var(--gold-bg),var(--panel-2));box-shadow:var(--shadow);}
+  details.tune>summary{cursor:pointer;padding:14px 16px;font-family:var(--serif);font-weight:600;font-size:18px;
+    color:var(--ink);list-style:none;display:flex;align-items:center;gap:9px;}
+  details.tune>summary::-webkit-details-marker{display:none;}
+  details.tune>summary .hint{font-family:var(--sans);font-size:11.5px;font-weight:450;color:var(--muted);
+    letter-spacing:.01em;margin-left:auto;text-transform:none;}
+  details.tune[open]>summary{border-bottom:1px solid var(--line);}
+  .tunebody{padding:14px 16px;background:var(--panel);}
+  .tunebody textarea{width:100%;font-family:var(--sans);font-size:14px;color:var(--ink);padding:11px 12px;
+    border:1px solid var(--line);border-radius:11px;background:var(--panel-2);resize:vertical;min-height:74px;
+    transition:border-color .15s,box-shadow .15s;}
+  .tunebody textarea:focus{outline:none;border-color:var(--gold-soft);box-shadow:0 0 0 3px rgba(201,170,108,.16);}
+  .tunebody .ex{font-size:11.5px;color:var(--faint);margin:7px 2px 12px;line-height:1.5;}
+  .tunebtn{width:100%;font-family:var(--sans);font-size:13.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;
+    padding:13px;border-radius:11px;cursor:pointer;border:1px solid var(--accent-deep);
+    background:linear-gradient(180deg,var(--accent),var(--accent-deep));color:#fff;box-shadow:0 3px 10px rgba(124,15,39,.26);}
+  .tunebtn:active{transform:translateY(1px);}
+  .fbmsg{display:none;font-size:12.5px;line-height:1.55;background:var(--panel-2);border:1px solid var(--line);
+    color:var(--ink);padding:10px 12px;border-radius:10px;margin-top:11px;}
+  .fbmsg code{background:#fff;padding:1px 5px;border-radius:5px;border:1px solid var(--line);font-size:12px;}
+
   /* ---- map cta + footer ---- */
   .mapcta{display:block;text-align:center;margin:24px 0 8px;padding:15px;border-radius:14px;
     background:linear-gradient(180deg,#fffefb,#f4eedf);border:1px solid var(--line);
@@ -140,6 +173,16 @@
     <div class="maphint">📍 Tap a pin to jump to the place · numbers match the list below</div>
   </div>
 
+  <details class="tune" id="tune">
+    <summary>💬 Tune my picks<span class="hint">teach the agent your taste</span></summary>
+    <div class="tunebody">
+      <textarea id="tune-text" placeholder="Tell the agent what you want — in your own words…"></textarea>
+      <div class="ex">e.g. “more cozy cafés near home”, “less seafood, more natural wine”, “I can bike up to 6 km”, “weekends are for brunch, not fancy dinners”.</div>
+      <button class="tunebtn" id="tune-send">Send to the agent →</button>
+      <div class="fbmsg" id="tune-msg"></div>
+    </div>
+  </details>
+
   <div id="board"></div>
 
   <a class="mapcta" id="mapcta" href="map.html">🗺 Explore the full map<small>all 60+ places · filters · your visits</small></a>
@@ -150,7 +193,7 @@
   </footer>
 </div>
 
-<script>window.WEEKEND_DATA = {"generated":"2026-06-12T20:40:14.560Z","weekend":{"sat":"2026-06-13","sun":"2026-06-14"},"home":{"name":"Sundbyberg","lat":59.3614,"lng":17.971},"map_href":"map.html","picks":[{"id":"babette","name":"Babette","type":"restaurant","cuisine":["Modern Cuisine"],"michelin":"bib","green_star":false,"price":"On a budget","value_tier":"everyday","lat":59.344897,"lng":18.0615889,"address":"Roslagsgatan 6","neighborhood":"Stockholm","distance_km":5.5,"vibe_tags":[],"michelin_dna_score":1,"confidence":"verified","inspector_note":"The very definition of a neighbourhood restaurant, Babette is a lively, bustling spot with a buzzing atmosphere; arrive expecting to squeeze past chairs without stepping on dogs and to sit ...","why_listed":"Bib Gourmand — Michelin's own good-value badge. This is the gold seed of the whole 'Michelin-adjacent value' idea: great cooking that won't break the bank.","highlights":["Lively, buzzing neighbourhood vibe","Known for pizzas and small plates","Budget-friendly Bib Gourmand","No-fuss, dog-friendly"],"accepts_reservations":"No","added_via":"Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).","source":["michelin"],"source_url":"https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/babette","last_verified":"2026-06-12","notes":"","score":2.135,"_s":{"score":2.135,"taste_fit":0.5,"vibe_fit":0.5,"dna":1,"value":1,"distpen":0.55},"reason":"Bib-value · Modern Cuisine · 5.5km · everyday","rank":1,"_kind":"restaurant"},{"id":"allegrine","name":"Allegrine","type":"restaurant","cuisine":["French"],"michelin":"bib","green_star":false,"price":"On a budget","value_tier":"everyday","lat":59.3391156,"lng":18.0606728,"address":"Kammakargatan 22","neighborhood":"Stockholm","distance_km":5.7,"vibe_tags":[],"michelin_dna_score":1,"confidence":"verified","inspector_note":"With its lively atmosphere, classic Gallic menus and a long bar counter where 18 stools look into the open kitchen, Allegrine has something of a French brasserie style. Lunch is a simple affair ...","why_listed":"Bib Gourmand — Michelin's own good-value badge. This is the gold seed of the whole 'Michelin-adjacent value' idea: great cooking that won't break the bank.","highlights":["Classic French brasserie cooking","18-stool counter onto the open kitchen","Simple, great-value lunch","Bib Gourmand"],"accepts_reservations":"No","added_via":"Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).","source":["michelin"],"source_url":"https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/allegrine","last_verified":"2026-06-12","notes":"","score":2.129,"_s":{"score":2.129,"taste_fit":0.5,"vibe_fit":0.5,"dna":1,"value":1,"distpen":0.5700000000000001},"reason":"Bib-value · French · 5.7km · everyday","rank":2,"_kind":"restaurant"},{"id":"bar-agrikultur","name":"Bar Agrikultur","type":"restaurant","cuisine":["Swedish"],"michelin":"bib","green_star":false,"price":"On a budget","value_tier":"everyday","lat":59.3128478,"lng":18.0831757,"address":"Skånegatan 79","neighborhood":"Stockholm","distance_km":8.3,"vibe_tags":[],"michelin_dna_score":1,"confidence":"verified","inspector_note":"This lively wine bar is a perfect fit for the neighbourhood. Sit at closely set tables or on high stools either up at the bar counter or next to the window, surrounded by paintings and hunting ...","why_listed":"Bib Gourmand — Michelin's own good-value badge. This is the gold seed of the whole 'Michelin-adjacent value' idea: great cooking that won't break the bank.","highlights":["Lively, natural-leaning wine bar","Budget-friendly Bib Gourmand","Counter and window stools","Söder neighbourhood favourite"],"accepts_reservations":"No","added_via":"Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).","source":["michelin"],"source_url":"https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/bar-agrikultur","last_verified":"2026-06-12","notes":"","score":2.051,"_s":{"score":2.051,"taste_fit":0.5,"vibe_fit":0.5,"dna":1,"value":1,"distpen":0.8300000000000001},"reason":"Bib-value · Swedish · 8.3km · everyday","rank":3,"_kind":"restaurant"},{"id":"kacks-bageri","name":"Käcks Bageri","type":"cafe","cuisine":["Bakery","Fika"],"michelin":"none","green_star":false,"price":null,"value_tier":"everyday","lat":59.3609,"lng":17.9706,"address":null,"neighborhood":"Sundbyberg","distance_km":0.1,"vibe_tags":["fika","quiet","neighbourhood","bakery"],"michelin_dna_score":0.72,"confidence":"candidate","inspector_note":"Famous for large, buttery pastries — a Sundbyberg fika staple. (approx coords)","why_listed":"Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.","highlights":["Large, buttery pastries it's locally famous for","A genuine Sundbyberg fika staple — ~100 m from home","Quiet neighbourhood-bakery feel"],"accepts_reservations":null,"added_via":"Hand-seeded from 'best of Stockholm' web guides during the initial list build.","source":["web"],"source_url":"https://2cupsoftravel.com/best-fika-locations-stockholm-coffee-cafe-guide/","last_verified":"2026-06-12","notes":"","score":2.101,"_s":{"score":2.101,"taste_fit":0.5,"vibe_fit":0.5,"dna":0.72,"value":1,"distpen":0.01},"reason":"under-the-radar · Bakery · 0.1km · everyday","rank":4,"_kind":"cafe"},{"id":"droppens-konditori","name":"Droppens Konditori","type":"cafe","cuisine":["Fika","Classic","Bakery"],"michelin":"none","green_star":false,"price":null,"value_tier":"everyday","lat":59.3622,"lng":17.97,"address":"Tulegatan 2, 172 78 Sundbyberg","neighborhood":"Sundbyberg","distance_km":0.1,"vibe_tags":["fika","classic","neighbourhood","konditori","quiet"],"michelin_dna_score":0.62,"confidence":"candidate","inspector_note":"Family-run konditori on Tulegatan since the 1950s; award-winning semlor many call the best in Stockholm. (approx coords)","why_listed":"Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.","highlights":["Family-run konditori on Tulegatan since the 1950s; award-winning semlor many call the best in Stockholm","fika","classic","neighbourhood"],"accepts_reservations":null,"added_via":"Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.","source":["web-search"],"source_url":"https://www.droppenskonditori.se/","last_verified":"2026-06-12","notes":"Classic Swedish konditori craft: semlor, prinsesstårta, sourdough buns. Open from 06:00 weekdays.","score":2.031,"_s":{"score":2.031,"taste_fit":0.5,"vibe_fit":0.5,"dna":0.62,"value":1,"distpen":0.01},"reason":"under-the-radar · Fika · 0.1km · everyday","rank":5,"_kind":"cafe"},{"id":"green-rabbit","name":"Green Rabbit","type":"cafe","cuisine":["Bakery","Swedish","Fika"],"michelin":"none","green_star":false,"price":null,"value_tier":"everyday","lat":59.3398,"lng":18.0595,"address":"Tegnérgatan 17, 111 40 Stockholm","neighborhood":"Vasastan","distance_km":5.6,"vibe_tags":["bakery","chef-driven","rye","organic","fika","pared-back"],"michelin_dna_score":0.85,"confidence":"candidate","inspector_note":"Rye-bread bakery-café by two-star chef Mathias Dahlgren and Martin Berg — traditional techniques, organic grain, Swedish smörrebröd and soup lunch. (approx coords)","why_listed":"Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.","highlights":["Rye-bread bakery-café by two-star chef Mathias Dahlgren and Martin Berg — traditional techniques, organic grain, Swed…","bakery","chef-driven","rye"],"accepts_reservations":null,"added_via":"Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.","source":["web-search"],"source_url":"https://mdghs.se/en/green-rabbit/","last_verified":"2026-06-12","notes":"Direct chef pedigree from the starred set; near the Rolfs Kök / Bib cluster on Tegnérgatan. Mon-Fri 07:30-15, Sat 09-14.","score":2.027,"_s":{"score":2.027,"taste_fit":0.5,"vibe_fit":0.5,"dna":0.85,"value":1,"distpen":0.5599999999999999},"reason":"under-the-radar · Bakery · 5.6km · everyday","rank":6,"_kind":"cafe"}]};</script>
+<script>window.WEEKEND_DATA = {"generated":"2026-06-12T20:55:03.707Z","weekend":{"sat":"2026-06-13","sun":"2026-06-14"},"home":{"name":"Sundbyberg","lat":59.3614,"lng":17.971},"map_href":"map.html","feedback":{"_comment":"Powers the in-map review form. repo = owner/name the GitHub Issue is opened against; the log-visit Action commits it to data/visits.jsonl.","enabled":true,"repo":"TURuibo/stockholm-food-agent"},"picks":[{"id":"babette","name":"Babette","type":"restaurant","cuisine":["Modern Cuisine"],"michelin":"bib","green_star":false,"price":"On a budget","value_tier":"everyday","lat":59.344897,"lng":18.0615889,"address":"Roslagsgatan 6","neighborhood":"Stockholm","distance_km":5.5,"vibe_tags":[],"michelin_dna_score":1,"confidence":"verified","inspector_note":"The very definition of a neighbourhood restaurant, Babette is a lively, bustling spot with a buzzing atmosphere; arrive expecting to squeeze past chairs without stepping on dogs and to sit ...","why_listed":"Bib Gourmand — Michelin's own good-value badge. This is the gold seed of the whole 'Michelin-adjacent value' idea: great cooking that won't break the bank.","highlights":["Lively, buzzing neighbourhood vibe","Known for pizzas and small plates","Budget-friendly Bib Gourmand","No-fuss, dog-friendly"],"accepts_reservations":"No","added_via":"Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).","source":["michelin"],"source_url":"https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/babette","last_verified":"2026-06-12","notes":"","score":2.135,"_s":{"score":2.135,"taste_fit":0.5,"vibe_fit":0.5,"dna":1,"value":1,"distpen":0.55},"reason":"Bib-value · Modern Cuisine · 5.5km · everyday","rank":1,"_kind":"restaurant"},{"id":"allegrine","name":"Allegrine","type":"restaurant","cuisine":["French"],"michelin":"bib","green_star":false,"price":"On a budget","value_tier":"everyday","lat":59.3391156,"lng":18.0606728,"address":"Kammakargatan 22","neighborhood":"Stockholm","distance_km":5.7,"vibe_tags":[],"michelin_dna_score":1,"confidence":"verified","inspector_note":"With its lively atmosphere, classic Gallic menus and a long bar counter where 18 stools look into the open kitchen, Allegrine has something of a French brasserie style. Lunch is a simple affair ...","why_listed":"Bib Gourmand — Michelin's own good-value badge. This is the gold seed of the whole 'Michelin-adjacent value' idea: great cooking that won't break the bank.","highlights":["Classic French brasserie cooking","18-stool counter onto the open kitchen","Simple, great-value lunch","Bib Gourmand"],"accepts_reservations":"No","added_via":"Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).","source":["michelin"],"source_url":"https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/allegrine","last_verified":"2026-06-12","notes":"","score":2.129,"_s":{"score":2.129,"taste_fit":0.5,"vibe_fit":0.5,"dna":1,"value":1,"distpen":0.5700000000000001},"reason":"Bib-value · French · 5.7km · everyday","rank":2,"_kind":"restaurant"},{"id":"restaurang-bazaar","name":"Restaurang Bazaar","type":"restaurant","cuisine":["Indian"],"michelin":"none","green_star":false,"price":null,"value_tier":"everyday","lat":59.3613,"lng":17.9719,"address":null,"neighborhood":"Sundbyberg","distance_km":0.1,"vibe_tags":["neighbourhood","value","lunch"],"michelin_dna_score":0.6,"confidence":"candidate","inspector_note":"Highly rated local Indian; great-value lunch, worth it in the evening too. (approx coords)","why_listed":"Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.","highlights":["Great-value lunch","Highly rated local Indian — good in the evening too","On your doorstep in Sundbyberg"],"accepts_reservations":null,"added_via":"Hand-seeded from 'best of Stockholm' web guides during the initial list build.","source":["web"],"source_url":"https://www.thefork.se/restauranger/sundbyberg-c532644","last_verified":"2026-06-12","notes":"","score":2.017,"_s":{"score":2.017,"taste_fit":0.5,"vibe_fit":0.5,"dna":0.6,"value":1,"distpen":0.01},"explore":true,"reason":"🧭 worth a try — under-the-radar · Indian · 0.1km · everyday","rank":3,"_kind":"restaurant"},{"id":"kacks-bageri","name":"Käcks Bageri","type":"cafe","cuisine":["Bakery","Fika"],"michelin":"none","green_star":false,"price":null,"value_tier":"everyday","lat":59.3609,"lng":17.9706,"address":null,"neighborhood":"Sundbyberg","distance_km":0.1,"vibe_tags":["fika","quiet","neighbourhood","bakery"],"michelin_dna_score":0.72,"confidence":"candidate","inspector_note":"Famous for large, buttery pastries — a Sundbyberg fika staple. (approx coords)","why_listed":"Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.","highlights":["Large, buttery pastries it's locally famous for","A genuine Sundbyberg fika staple — ~100 m from home","Quiet neighbourhood-bakery feel"],"accepts_reservations":null,"added_via":"Hand-seeded from 'best of Stockholm' web guides during the initial list build.","source":["web"],"source_url":"https://2cupsoftravel.com/best-fika-locations-stockholm-coffee-cafe-guide/","last_verified":"2026-06-12","notes":"","score":2.101,"_s":{"score":2.101,"taste_fit":0.5,"vibe_fit":0.5,"dna":0.72,"value":1,"distpen":0.01},"reason":"under-the-radar · Bakery · 0.1km · everyday","rank":4,"_kind":"cafe"},{"id":"droppens-konditori","name":"Droppens Konditori","type":"cafe","cuisine":["Fika","Classic","Bakery"],"michelin":"none","green_star":false,"price":null,"value_tier":"everyday","lat":59.3622,"lng":17.97,"address":"Tulegatan 2, 172 78 Sundbyberg","neighborhood":"Sundbyberg","distance_km":0.1,"vibe_tags":["fika","classic","neighbourhood","konditori","quiet"],"michelin_dna_score":0.62,"confidence":"candidate","inspector_note":"Family-run konditori on Tulegatan since the 1950s; award-winning semlor many call the best in Stockholm. (approx coords)","why_listed":"Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.","highlights":["Family-run konditori on Tulegatan since the 1950s; award-winning semlor many call the best in Stockholm","fika","classic","neighbourhood"],"accepts_reservations":null,"added_via":"Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.","source":["web-search"],"source_url":"https://www.droppenskonditori.se/","last_verified":"2026-06-12","notes":"Classic Swedish konditori craft: semlor, prinsesstårta, sourdough buns. Open from 06:00 weekdays.","score":2.031,"_s":{"score":2.031,"taste_fit":0.5,"vibe_fit":0.5,"dna":0.62,"value":1,"distpen":0.01},"reason":"under-the-radar · Fika · 0.1km · everyday","rank":5,"_kind":"cafe"},{"id":"cafe-boulevard","name":"Café Boulevard","type":"cafe","cuisine":["Fika","Bakery","Lunch"],"michelin":"none","green_star":false,"price":null,"value_tier":"everyday","lat":59.3632,"lng":17.9722,"address":"Esplanaden 17, 172 68 Sundbyberg","neighborhood":"Sundbyberg","distance_km":0.2,"vibe_tags":["fika","konditori","neighbourhood","classic","from-scratch"],"michelin_dna_score":0.6,"confidence":"candidate","inspector_note":"Sundbyberg konditori since 1941 — everything made from scratch in the basement bakery, first-class KRAV-certified ingredients. (approx coords)","why_listed":"Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.","highlights":["Sundbyberg konditori since 1941 — everything made from scratch in the basement bakery, first-class KRAV-certified ing…","fika","konditori","neighbourhood"],"accepts_reservations":null,"added_via":"Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.","source":["web-search"],"source_url":"https://cafeboulevard.se/","last_verified":"2026-06-12","notes":"Lunch, tårtor, bakelser, smörgåsar. Open from 05:00 weekdays.","score":2.014,"_s":{"score":2.014,"taste_fit":0.5,"vibe_fit":0.5,"dna":0.6,"value":1,"distpen":0.02},"explore":true,"reason":"🧭 worth a try — under-the-radar · Fika · 0.2km · everyday","rank":6,"_kind":"cafe"}]};</script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 const D = window.WEEKEND_DATA || { weekend:{}, home:{lat:59.3614,lng:17.9710,name:"Sundbyberg"}, picks:[], map_href:"map.html" };
@@ -251,7 +294,13 @@ function cardHTML(p){
     +'<a class="primary" href="'+gmapLink(p)+'" target="_blank" rel="noopener">🧭 Directions</a>'
     +'<a href="'+webLink(p)+'" target="_blank" rel="noopener">🔎 Look it up</a>';
   if(p.source_url) h+='<a href="'+esc(p.source_url)+'" target="_blank" rel="noopener">↗ Source</a>';
-  h+='</div></div>';
+  h+='</div>';
+  h+='<div class="react" data-id="'+esc(p.id)+'" data-name="'+esc(p.name)+'">'
+    +'<span class="rl">Good pick?</span>'
+    +'<button class="up" type="button" aria-pressed="false">❤️ More like this</button>'
+    +'<button class="down" type="button" aria-pressed="false">🚫 Not for me</button>'
+    +'</div>';
+  h+='</div>';
   return h;
 }
 
@@ -265,6 +314,54 @@ if(!picks.length){
   if(cafes.length) h+='<div class="seclabel">☕ Cafés · fika &amp; brunch <span class="n">'+cafes.length+'</span></div>'+cafes.map(cardHTML).join("");
   board.innerHTML=h;
 }
+
+/* ---- feedback: reactions + free-text note -> prefilled GitHub Issue ---- */
+const FB = D.feedback || null;
+const fbLive = !!(FB && FB.repo && FB.enabled !== false);
+function openIssue(title, payload){
+  const body = "Sent from the **This weekend** board. The `tune-feedback` Action records this to "
+    + "`data/feedback.jsonl`; run `/tune` with Claude to fold it into your taste profile.\n\n"
+    + "```json\n" + JSON.stringify(payload, null, 2) + "\n```\n";
+  const url = "https://github.com/" + FB.repo + "/issues/new?labels=feedback"
+    + "&title=" + encodeURIComponent(title)
+    + "&body=" + encodeURIComponent(body);
+  window.open(url, "_blank", "noopener");
+}
+function flashMsg(el, html){ if(el){ el.innerHTML = html; el.style.display = "block"; } }
+function copyText(t){ if(navigator.clipboard) navigator.clipboard.writeText(t); }
+
+// per-card ❤️/🚫 reactions
+document.querySelectorAll(".react").forEach(row=>{
+  const id=row.getAttribute("data-id"), name=row.getAttribute("data-name");
+  const up=row.querySelector(".up"), down=row.querySelector(".down");
+  function react(signal, btn, other){
+    const on = btn.getAttribute("aria-pressed")==="true";
+    btn.setAttribute("aria-pressed", String(!on));
+    other.setAttribute("aria-pressed","false");
+    if(on) return;                                   // un-toggling: don't resend
+    const payload={ kind:"react", id, name, signal };
+    const title=(signal>0?"❤️ more like this: ":"🚫 not for me: ")+name;
+    if(fbLive) openIssue(title, payload);
+    else copyText("/tune "+name+" "+(signal>0?"+1 more like this":"-1 not for me"));
+  }
+  up.onclick=()=>react(1, up, down);
+  down.onclick=()=>react(-1, down, up);
+});
+
+// free-text "tune my picks"
+const tuneSend=document.getElementById("tune-send");
+if(tuneSend) tuneSend.onclick=()=>{
+  const note=(document.getElementById("tune-text").value||"").trim();
+  const msg=document.getElementById("tune-msg");
+  if(!note){ flashMsg(msg, "Type what you’d like first ✍️"); return; }
+  if(fbLive){
+    openIssue("💬 tune: "+note.slice(0,48), { kind:"note", note });
+    flashMsg(msg, "Opened a prefilled GitHub issue — tap <b>Submit new issue</b> there. Then run <code>git pull</code> + <code>/tune</code> with Claude to apply it.");
+  }else{
+    copyText("/tune "+note);
+    flashMsg(msg, "Copied — paste to Claude:<br><code>/tune "+esc(note)+"</code>");
+  }
+};
 
 /* ---- jump from map pin to its card ---- */
 function jumpTo(n){

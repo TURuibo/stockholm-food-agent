@@ -56,11 +56,17 @@ PRICE_CEILING = mid   # default max value_tier; "splurge" only when explicitly a
 - `data/michelin_fingerprint.md` — "what good looks like," distilled from starred + Bib places.
 - `data/visits.jsonl` — append-only: where the user went, rating (−2…+2), context, comment.
 - `data/suggestions.jsonl` — append-only: every shortlist shown (implicit signal + anti-repeat).
+- `data/feedback.jsonl` — append-only, tracked: lightweight taste signal from the weekend board —
+  reactions (`kind:"react"`, `signal` ±1, `features` snapshot) and free-text asks (`kind:"note"`).
+  Folded into `taste_profile.md` by **`/tune`** (re-derived from the whole, never blindly accumulated).
 
 ## Conventions
 - **Always log a visit** to `visits.jsonl` after the user reports back on a place; then re-derive
   taste if enough new signal.
 - **Always log the shortlist** to `suggestions.jsonl` whenever you recommend.
+- **Feedback loop:** weekend-board reactions (❤️/🚫) and free-text "tune my picks" notes open a
+  `feedback`-labelled GitHub Issue → `tune-feedback.yml` records them to `feedback.jsonl`. Run `/tune`
+  to interview lightly and update `taste_profile.md` (+ `config.json` weights) from the accumulated signal.
 - New places from the hunter enter as `confidence: candidate` and only affect taste after a real visit.
 - Be polite to Michelin: all fetching goes through `scripts/lib/fetch_polite.mjs` (browser UA,
   delay, cache). Never hit disallowed query-param URLs (sort/search/showMap); use the sitemap.
@@ -73,5 +79,5 @@ PRICE_CEILING = mid   # default max value_tier; "splurge" only when explicitly a
 
 ## Commands (in `.claude/commands/`)
 `/onboard` seed taste · `/recommend [ctx]` core · `/nearby` walking distance · `/visited` log+learn ·
-`/veto` never-again · `/taste` show/edit profile · `/stats` hit-rate · `/hunt` grow list ·
-`/refresh-michelin` re-scrape · `/map` rebuild view.html.
+`/tune` fold board feedback into taste · `/veto` never-again · `/taste` show/edit profile ·
+`/stats` hit-rate · `/hunt` grow list · `/refresh-michelin` re-scrape · `/map` rebuild view.html.

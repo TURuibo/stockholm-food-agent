@@ -61,11 +61,17 @@ const restaurants = recommend("restaurant", nRest).map((p) => ({ ...p, _kind: "r
 // Restaurants first (the weekend "occasion"), then cafés (fika / brunch). Renumber for display.
 const picks = [...restaurants, ...cafes].map((p, i) => ({ ...p, rank: i + 1 }));
 
+// feedback config (board reactions -> GitHub Issue -> tune-feedback Action). Optional.
+let feedback = null;
+try { feedback = JSON.parse(await readFile(join(root, "data", "config.json"), "utf8")).feedback || null; }
+catch { /* board works without it (falls back to copy-for-Claude) */ }
+
 const data = {
   generated: now.toISOString(),
   weekend: weekendDates(now),
   home: HOME,
   map_href: "map.html",
+  feedback,
   picks,
 };
 

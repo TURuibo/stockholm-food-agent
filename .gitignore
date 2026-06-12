@@ -21,3 +21,5 @@ data/suggestions.jsonl
 # NOTE: data/visits.jsonl is intentionally tracked. Reviews submitted from the public
 # map open a GitHub Issue; the log-visit Action appends them here and commits, so a
 # `git pull` at home syncs them. (User chose "public is fine" for review data.)
+# Same for data/feedback.jsonl: board reactions/notes open a "feedback" issue; the
+# tune-feedback Action appends + commits, and /tune folds it into the taste profile.
