@@ -6,8 +6,10 @@
 //
 // why_listed and added_via are derived deterministically from existing fields
 // (michelin tier, value_tier, source) so they stay correct if those change and
-// the script is re-run. highlights are authored per id below; any place missing
-// from the table falls back to a derivation from its note/notes/vibe_tags.
+// the script is re-run. highlights are authored per id below; a place missing
+// from the table keeps its existing hand-distilled highlights (e.g. a fresh
+// hunter find) and only falls back to a derivation when it has none yet — so
+// re-running never clobbers curated highlights.
 //
 // Usage:  node scripts/annotate_provenance.mjs
 // Idempotent — safe to re-run after the scraper/hunter adds places.
@@ -157,7 +159,11 @@ const annotated = places.map((p) => {
   const enriched = {
     ...p,
     why_listed: whyListed(p),
-    highlights: HIGHLIGHTS[p.id] || deriveHighlights(p),
+    highlights:
+      HIGHLIGHTS[p.id] ||
+      (Array.isArray(p.highlights) && p.highlights.length
+        ? p.highlights
+        : deriveHighlights(p)),
     added_via: addedVia(p),
   };
   n++;
