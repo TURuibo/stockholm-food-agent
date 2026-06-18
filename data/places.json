@@ -335,6 +335,52 @@
     "notes": "Daily on-site baking Mon-Sun. Ingredient-obsessed craft baking a short walk from home."
   },
   {
+    "id": "grona-stugan",
+    "name": "Gröna Stugan",
+    "type": "cafe",
+    "cuisine": [
+      "Cafe",
+      "Swedish",
+      "Fika"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": null,
+    "value_tier": "everyday",
+    "lat": 59.3717,
+    "lng": 17.9667,
+    "address": "Ursviksvägen 28, Sundbyberg",
+    "neighborhood": "Sundbyberg",
+    "distance_km": 1.2,
+    "vibe_tags": [
+      "cozy",
+      "fika",
+      "nature",
+      "outdoor",
+      "family-friendly",
+      "work-friendly"
+    ],
+    "michelin_dna_score": 0.3,
+    "confidence": "candidate",
+    "inspector_note": "Neighbourhood-keeper track: a green little house by the bird-rich Lötsjön lake in Sundbyberg (~1.4 km from home). Home-cooked daily lunch, sandwiches, ice cream and fika in leafy lakeside surroundings; open Tue-Sun. Near home, casual, brunch/fika appeal — does not displace craft picks.",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Lakeside setting by Lötsjön",
+      "Home-cooked daily lunch and fika",
+      "Walkable from Sundbyberg"
+    ],
+    "accepts_reservations": null,
+    "added_via": "hunter search",
+    "source": [
+      "gronastugan.se",
+      "Thatsup",
+      "Cafekartan"
+    ],
+    "source_url": "https://www.gronastugan.se/",
+    "last_verified": "2026-06-15",
+    "notes": ""
+  },
+  {
     "id": "juniper-tree",
     "name": "Juniper Tree",
     "type": "cafe",
@@ -486,19 +532,12 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "Essence is the perfect spot for social types who like to mingle. Everyone is seated around a big counter and served at the same time, with Chef Stefan Taylor centre stage preparing the dishes and ...",
-    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted, but priced as a splurge; here as a 'what good looks like' reference more than an everyday pick.",
-    "highlights": [
-      "Communal counter — the whole room served in sync",
-      "Chef Stefan Taylor cooking centre-stage",
-      "Sociable, mingle-friendly fine dining"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/essence-1203656",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -561,19 +600,12 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "After travelling the world, two friends opened this restaurant to showcase their experiences through food, yet with a decidedly imaginative streak. The cooking is characterised by bold, surprising...",
-    "why_listed": "Michelin 1-star — seeds the 'what good looks like' fingerprint. A splurge benchmark, down-weighted by default so it doesn't crowd out the value cousins.",
-    "highlights": [
-      "Bold, surprising, well-travelled cooking",
-      "Imaginative one-star tasting experience",
-      "Personal, friends-run kitchen"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/etoile",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -720,19 +752,12 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "There is a wonderfully personal touch to this well-run Vietnamese restaurant, with posters and old photos adorning the walls, and an array of objects decorating the room. It’s an enjoyably relaxed...",
-    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
-    "highlights": [
-      "Wonderfully personal, photo-filled room",
-      "Relaxed, well-run Vietnamese",
-      "On a budget — Michelin-listed value"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/minh-mat",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -755,19 +780,12 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "A stylish, red-brick former factory dating back to 1916, set beside the water, is home to this brasserie-style restaurant that has a welcome brightness to both its décor and its atmosphere. Local ...",
-    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
-    "highlights": [
-      "Bright brasserie in a 1916 red-brick factory",
-      "Waterside setting",
-      "Local, seasonal modern cooking"
-    ],
     "accepts_reservations": "Yes",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/lux-dag-for-dag",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -790,20 +808,12 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "With its pared-back feel, rustic exposed brickwork and buzzy vibe, this is just the place for a lively night out. It remains one of the hottest tickets in town, so try for a counter seat ...",
-    "why_listed": "Bib Gourmand — Michelin's own good-value badge. This is the gold seed of the whole 'Michelin-adjacent value' idea: great cooking that won't break the bank.",
-    "highlights": [
-      "One of the hottest tickets in town",
-      "Buzzy, rustic exposed-brick room",
-      "Grab a counter seat for the action",
-      "Bib Gourmand value"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/lilla-ego",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -954,19 +964,12 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "This pleasantly relaxed little neighbourhood restaurant is sleekly and stylishly decorated with a monochrome colour scheme. For its part, the kitchen produces accomplished dishes and boasts some ...",
-    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
-    "highlights": [
-      "Accomplished modern cooking",
-      "Relaxed, stylish monochrome room",
-      "Neighbourhood scale and feel"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/nisch",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -1012,6 +1015,50 @@
     "notes": "Mediterranean bistro at Fridhemsplan opened 2024, inspired by the southern Mediterranean coastline. Whipped ricotta, charred pulpo, focaccia — sharing-friendly and circa 350-450 SEK per person."
   },
   {
+    "id": "kungsholmens-vinbar",
+    "name": "Kungsholmens Vinbar",
+    "type": "restaurant",
+    "cuisine": [
+      "Wine bar",
+      "Mediterranean",
+      "Small plates"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": null,
+    "value_tier": "mid",
+    "lat": 59.3324,
+    "lng": 18.0356,
+    "address": "Fleminggatan, Kungsholmen",
+    "neighborhood": "Kungsholmen",
+    "distance_km": 4.9,
+    "vibe_tags": [
+      "wine-bar",
+      "neighbourhood",
+      "cozy",
+      "small-plates",
+      "local-favourite"
+    ],
+    "michelin_dna_score": 0.6,
+    "confidence": "candidate",
+    "inspector_note": "Neighbourhood wine bar near Fridhemsplan (opened 2020), local favourite filling with families. Well-priced everyday wines (uncommon for Stockholm) plus European/Mediterranean small plates: charcuterie, burrata, carpaccio, risotto. Craft track: serious wine focus + sustained local reputation.",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Well-priced everyday wine list",
+      "European small plates",
+      "Summer outdoor seating"
+    ],
+    "accepts_reservations": null,
+    "added_via": "hunter search",
+    "source": [
+      "Star Wine List",
+      "Visit Stockholm"
+    ],
+    "source_url": "https://starwinelist.com/wine-place/kungsholmens-vinbar",
+    "last_verified": "2026-06-15",
+    "notes": ""
+  },
+  {
     "id": "sushi-sho",
     "name": "Sushi Sho",
     "type": "restaurant",
@@ -1031,19 +1078,12 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "With its white tiled walls and compact counter seating, this restaurant couldn't look simpler, but it is not a place to be underestimated. Classic Japanese sushi preparations soar to a high level ...",
-    "why_listed": "Michelin 1-star — seeds the 'what good looks like' fingerprint. A splurge benchmark, down-weighted by default so it doesn't crowd out the value cousins.",
-    "highlights": [
-      "Classic sushi at the highest level",
-      "Intimate tiled counter",
-      "One-star benchmark for the fingerprint"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/sushi-sho",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -1066,19 +1106,12 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "You’re guaranteed a warm welcome at this sweetly run bohemian bistro. A communal table is at the heart of proceedings, but there are a few smaller tables and some counter seating available too. ...",
-    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
-    "highlights": [
-      "Warm, bohemian bistro welcome",
-      "Communal table at its heart",
-      "Relaxed counter seating"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/bord",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -1101,19 +1134,56 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "There’s a slightly ‘underground’ feel to this small bistro, both figuratively and literally; you enter via a few steps down from street level, into a ‘half-cellar’ dining room where the windows ...",
-    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
-    "highlights": [
-      "Characterful half-cellar dining room",
-      "Budget-priced for a Michelin listing",
-      "Small, personal bistro"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/prospero",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
+    "notes": ""
+  },
+  {
+    "id": "restaurang-agnes",
+    "name": "Restaurang Agnes",
+    "type": "restaurant",
+    "cuisine": [
+      "Modern Cuisine",
+      "Southern European",
+      "Wine bar"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": null,
+    "value_tier": "mid",
+    "lat": 59.3306,
+    "lng": 18.0427,
+    "address": "Norra Agnegatan 43, Kungsholmen",
+    "neighborhood": "Kungsholmen",
+    "distance_km": 5.3,
+    "vibe_tags": [
+      "wine-bar",
+      "neighbourhood",
+      "modern",
+      "small-plates",
+      "local-favourite"
+    ],
+    "michelin_dna_score": 0.62,
+    "confidence": "candidate",
+    "inspector_note": "Cozy Kungsholmen bistro/wine bar (since 2015), established favourite among local wine and food lovers. Small plates and mains blending Spanish, Asian, French influences with a Swedish touch; several-hundred-bottle list spanning natural and classic. Craft track.",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Inventive Southern-European small plates",
+      "Several-hundred-bottle wine list",
+      "Communal table and bar seating"
+    ],
+    "accepts_reservations": null,
+    "added_via": "hunter search",
+    "source": [
+      "Star Wine List",
+      "Thatsup"
+    ],
+    "source_url": "https://starwinelist.com/wine-place/agnes",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -1180,20 +1250,12 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "Overseen by passionate chef-owner Johan Jureskog, this buzzy neighbourhood spot has been a staple of the Stockholm dining scene for nearly 40 years. The industrial-style décor comes courtesy of ...",
-    "why_listed": "Bib Gourmand — Michelin's own good-value badge. This is the gold seed of the whole 'Michelin-adjacent value' idea: great cooking that won't break the bank.",
-    "highlights": [
-      "A Stockholm staple for ~40 years",
-      "Chef-owner Johan Jureskog at the helm",
-      "Buzzy, industrial-design room",
-      "Bib Gourmand value"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/rolfs-kok",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -1216,20 +1278,12 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "The very definition of a neighbourhood restaurant, Babette is a lively, bustling spot with a buzzing atmosphere; arrive expecting to squeeze past chairs without stepping on dogs and to sit ...",
-    "why_listed": "Bib Gourmand — Michelin's own good-value badge. This is the gold seed of the whole 'Michelin-adjacent value' idea: great cooking that won't break the bank.",
-    "highlights": [
-      "Lively, buzzing neighbourhood vibe",
-      "Known for pizzas and small plates",
-      "Budget-friendly Bib Gourmand",
-      "No-fuss, dog-friendly"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/babette",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -1252,19 +1306,12 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "The flavours of Southeast Asia are the inspiration behind this stylish restaurant and bar that occupies the building once home to the Stockholm Electric Company. The unusual front door harks back ...",
-    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
-    "highlights": [
-      "Bold Southeast-Asian flavours",
-      "Striking room in an old power-company building",
-      "Lively bar-and-restaurant energy"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/farang",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -1332,21 +1379,59 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "With its lively atmosphere, classic Gallic menus and a long bar counter where 18 stools look into the open kitchen, Allegrine has something of a French brasserie style. Lunch is a simple affair ...",
-    "why_listed": "Bib Gourmand — Michelin's own good-value badge. This is the gold seed of the whole 'Michelin-adjacent value' idea: great cooking that won't break the bank.",
-    "highlights": [
-      "Classic French brasserie cooking",
-      "18-stool counter onto the open kitchen",
-      "Simple, great-value lunch",
-      "Bib Gourmand"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/allegrine",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
+  },
+  {
+    "id": "stora-henriksvik",
+    "name": "Stora Henriksvik",
+    "type": "cafe",
+    "cuisine": [
+      "Fika",
+      "Bakery",
+      "Lunch"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": null,
+    "value_tier": "mid",
+    "lat": 59.3197,
+    "lng": 18.0289,
+    "address": "Långholmsmuren 21, Stockholm",
+    "neighborhood": "Långholmen",
+    "distance_km": 5.7,
+    "vibe_tags": [
+      "view",
+      "waterfront",
+      "garden",
+      "fika",
+      "brunch",
+      "organic",
+      "scenic"
+    ],
+    "michelin_dna_score": 0.66,
+    "confidence": "candidate",
+    "inspector_note": null,
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Lakeside garden and tucked-away beach with views over Mälaren",
+      "Seasonal food from their own historic 1700s garden — organic where possible",
+      "In-house baking: freshly-baked cakes, buns and luxurious pastries",
+      "Atmospheric 18th-century building with trompe-loeil details"
+    ],
+    "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
+    "source": [
+      "web-search"
+    ],
+    "source_url": "https://storahenriksvik.se/kafe",
+    "last_verified": "2026-06-13",
+    "notes": "Admission: craft track. External signal: Thatsup café listing + sustained reputation; ingredient obsession (own-garden produce, organic). View: Lake Mälaren waterfront + beach. Soup 165kr, pie 185kr, pancakes 85kr — everyday/mid. Some pricing/service grumbles. Coords approximate (Långholmsmuren 21)."
   },
   {
     "id": "dashi",
@@ -1368,19 +1453,12 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "Two chefs, one Swedish and one Australian, are behind this homage to Japanese cuisine which sports the uncluttered, pared-back décor common to both Nordic and Japanese restaurants. Prime Swedish ...",
-    "why_listed": "Michelin 1-star — seeds the 'what good looks like' fingerprint. A splurge benchmark, down-weighted by default so it doesn't crowd out the value cousins.",
-    "highlights": [
-      "Japanese technique on prime Swedish produce",
-      "Pared-back Nordic-Japanese room",
-      "One-star tasting experience"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/dashi",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -1403,19 +1481,12 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "In a neighbourhood as chic as this, you have to know what you’re looking for. In this case, the name Ett Hem, which is discreetly hidden within the detailing of a black iron gate. Head through and...",
-    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted, but priced as a splurge; here as a 'what good looks like' reference more than an everyday pick.",
-    "highlights": [
-      "Hidden, intimate hotel dining room",
-      "Chic Lärkstaden setting",
-      "Refined modern cooking (a splurge)"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/ett-hem",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -1482,20 +1553,12 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "The residents of Östermalm can count themselves lucky to call this charming restaurant run by a husband-and-wide duo their local – but whether you’re a regular or not, you’ll instantly feel the ...",
-    "why_listed": "Bib Gourmand — Michelin's own good-value badge. This is the gold seed of the whole 'Michelin-adjacent value' idea: great cooking that won't break the bank.",
-    "highlights": [
-      "Charming husband-and-wife local",
-      "Farm-to-table focus",
-      "Warm, regular's-welcome feel",
-      "Bib Gourmand value"
-    ],
     "accepts_reservations": "Yes",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/arla",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -1518,19 +1581,12 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "World-renowned Chef Björn Frantzén provides a truly immersive experience that you won't forget in a hurry at his uber-stylish restaurant. Ring the bell to enter, before enjoying an aperitif in the...",
-    "why_listed": "Michelin 3-star — the benchmark for 'what good looks like'. Kept as a reference point for the fingerprint; ranks low by default because a 3-star palace is the opposite of the cheap-everyday brief.",
-    "highlights": [
-      "Sweden's only 3-star — world-renowned",
-      "Fully immersive multi-floor experience",
-      "The fingerprint's top reference point"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/frantzen",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -1598,19 +1654,12 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "This intimate restaurant offers great cooking and a fun night out, thanks to its moody lighting, pumping soundtrack and lively cocktail bar. Influenced by South America, Asia and Europe, the ...",
-    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
-    "highlights": [
-      "Moody, fun, music-led room",
-      "Globe-spanning small plates",
-      "Lively cocktail bar"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/black-milk-gastro-bar",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -1633,19 +1682,12 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "Chic and sultry, this Södermalm spot delivers the look and vibe of a bar, with the added bonus of flavoursome small plates. The cooking is bang on-trend, blending Nordic and French influences with...",
-    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
-    "highlights": [
-      "Bar-like vibe with serious small plates",
-      "Nordic–French flavours, on-trend",
-      "Budget-priced Söder spot"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/forma-1210349",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -1668,19 +1710,12 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "Head past the bustle of the floors below and up to the third level of this beautiful city centre townhouse, where you’ll find this discreet, intimate restaurant that exudes tranquillity. Start ...",
-    "why_listed": "Michelin 1-star — seeds the 'what good looks like' fingerprint. A splurge benchmark, down-weighted by default so it doesn't crowd out the value cousins.",
-    "highlights": [
-      "Discreet, tranquil top-floor room",
-      "Refined creative tasting menu",
-      "One-star benchmark"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/nour",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -1703,19 +1738,12 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "Named after the historic Sperlingens Backe neighbourhood in which it's located, this upscale US-style steakhouse boasts a seductive cocktail bar, an open kitchen with a wood-fired grill, and a ...",
-    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
-    "highlights": [
-      "Wood-fired-grill steakhouse",
-      "Seductive cocktail bar",
-      "Upscale US-style format"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/sperling-co",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -1738,19 +1766,12 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "Offering one of the city’s most unique dining experiences, Niklas Ekstedt eschews electricity and does all of his cooking over fire. Your visit opens with a tour of the kitchen, where the culinary...",
-    "why_listed": "Michelin 1-star — seeds the 'what good looks like' fingerprint. A splurge benchmark, down-weighted by default so it doesn't crowd out the value cousins.",
-    "highlights": [
-      "Everything cooked over open fire — no electricity",
-      "One of the city's most unique experiences",
-      "Opens with a kitchen tour"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/ekstedt",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -1773,19 +1794,12 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "After more than a decade at their former address, chef-owners Adam and Albin moved to a handsome 19th-century building beside the opera and opposite the Swedish parliament. The interior features a...",
-    "why_listed": "Michelin 1-star — seeds the 'what good looks like' fingerprint. A splurge benchmark, down-weighted by default so it doesn't crowd out the value cousins.",
-    "highlights": [
-      "Chef-owners Adam & Albin's flagship",
-      "Handsome building by the opera",
-      "Inventive one-star tasting"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/adam-albin",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -1808,19 +1822,12 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "Perfectly pitched for busy Humlegårdsgatan is this stylish take on a classic brasserie. It has a smart, elegant feel and a hugely impressive wine cellar. Appealing Swedish classics are immensely ...",
-    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
-    "highlights": [
-      "Elegant take on a classic brasserie",
-      "Hugely impressive wine cellar",
-      "Well-executed Swedish classics"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/hillenberg",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -1887,19 +1894,12 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "The former Astoria Cinema, which dates from the 1870s, has been carefully restored and now boasts a bustling brasserie with all the glamour and opulence of yesteryear. Sit at the counter to watch ...",
-    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
-    "highlights": [
-      "Glamorous restored 1870s cinema",
-      "Bustling classic brasserie",
-      "Counter seats onto the kitchen"
-    ],
     "accepts_reservations": "Yes",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/brasserie-astoria",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -1922,19 +1922,12 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "If you're celebrating, then you've come to the right place. Sweden's most opulent restaurant sits within the historic Royal Opera House, and the sumptuous, high-ceilinged room comes bedecked with ...",
-    "why_listed": "Michelin 1-star — seeds the 'what good looks like' fingerprint. A splurge benchmark, down-weighted by default so it doesn't crowd out the value cousins.",
-    "highlights": [
-      "Sweden's most opulent dining room",
-      "Inside the Royal Opera House",
-      "Celebration-grade one-star"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/operakallaren",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -1957,19 +1950,12 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "The name is a diminutive version of ‘petrichor’ – which refers to the lovely scent that accompanies rain after a warm period – and there’s a similarly pleasant cosiness to the restaurant itself, ...",
-    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
-    "highlights": [
-      "Cosy, intimate room (named after 'petrichor')",
-      "Refined modern cooking",
-      "Special-occasion feel without the star price"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/petri",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -2036,19 +2022,12 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "The net-curtained windows give little away, but once inside you’ll find an elegant room that’s a perfect match for this chic neighbourhood. The chefs work with calm efficiency in the open kitchen ...",
-    "why_listed": "Michelin 1-star — seeds the 'what good looks like' fingerprint. A splurge benchmark, down-weighted by default so it doesn't crowd out the value cousins.",
-    "highlights": [
-      "Elegant, discreet Östermalm room",
-      "Calm open-kitchen precision",
-      "One-star tasting"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/ergo",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -2071,19 +2050,12 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "The magnificent, imposing Grand Hôtel is the home for this decadent restaurant, where rich flavours and impeccable Nordic seafood reign supreme. The tasting menu takes you through a roll-call of ...",
-    "why_listed": "Michelin 1-star — seeds the 'what good looks like' fingerprint. A splurge benchmark, down-weighted by default so it doesn't crowd out the value cousins.",
-    "highlights": [
-      "Impeccable Nordic seafood",
-      "Decadent Grand Hôtel setting",
-      "Roll-call tasting menu"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/seafood-gastro",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -2106,19 +2078,12 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "After a few years as Djuret, this long-established restaurant has returned to its original guise and provides heaps of old-school charm. The dining room is full of character, with armchairs, ...",
-    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
-    "highlights": [
-      "Heaps of old-school charm",
-      "Character-filled Gamla Stan room",
-      "Returned to its classic guise"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/leijontornet",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -2141,19 +2106,12 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "This bright, buzzy restaurant is just a cast away from the waterfront and has a semi-industrial fish-market look. Choose your seafood from the fridge or the tank, along with a cooking style, a ...",
-    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
-    "highlights": [
-      "Pick your seafood from the fridge or tank",
-      "Bright, buzzy fish-market look",
-      "Steps from the waterfront"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/b-a-r",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -2176,19 +2134,12 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "On the western side of the borough of Södermalm, chef-owner Tomoko Hayashi brings a little piece of Japan to Stockholm’s dining scene by offering an omakase experience that doesn’t break the bank....",
-    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
-    "highlights": [
-      "Omakase that doesn't break the bank",
-      "Chef-owner Tomoko Hayashi",
-      "Authentic washoku on Södermalm"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/washoku-tomo",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -2211,19 +2162,12 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "Your experience at Celeste starts the moment enter the back garden, ring the bell and are whisked up in the lift to the 8th floor – where you’ll be served a welcome drink on the terrace to a bird’...",
-    "why_listed": "Michelin 1-star — seeds the 'what good looks like' fingerprint. A splurge benchmark, down-weighted by default so it doesn't crowd out the value cousins.",
-    "highlights": [
-      "8th-floor room with a terrace welcome drink",
-      "Theatrical arrival sequence",
-      "One-star with a view"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/celeste-1209889",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -2246,20 +2190,12 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "Set within the Grand Hotel, this trendy, modern bistro offers well-priced dishes with a Scandinavian heart; three are about right for one person, or order more and share. Grab a seat at the ...",
-    "why_listed": "Bib Gourmand — Michelin's own good-value badge. This is the gold seed of the whole 'Michelin-adjacent value' idea: great cooking that won't break the bank.",
-    "highlights": [
-      "Well-priced modern dishes inside the Grand Hôtel",
-      "Three plates make a meal — built for sharing",
-      "Lively counter seating",
-      "Bib Gourmand value"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/matbaren",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -2410,19 +2346,12 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "Head straight for the roof terrace to kick off your visit with a cocktail and 360° views of Stockholm and, once inside, opt for a seat by the curved window to capitalise on the 13th floor location...",
-    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
-    "highlights": [
-      "13th-floor roof terrace with 360° views",
-      "Cocktails above the city",
-      "Modern Swedish cooking"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/freyja",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -2489,19 +2418,103 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "Named after the 1966 Ingmar Bergman film, this stylish restaurant creates a striking contrast between its old townhouse exterior and its elegant interior design. Before dinner you are invited down...",
-    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted, but priced as a splurge; here as a 'what good looks like' reference more than an everyday pick.",
-    "highlights": [
-      "Striking old-townhouse-meets-modern design",
-      "Named after the Bergman film",
-      "Elegant, theatrical dinner (a splurge)"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/persona",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
+    "notes": ""
+  },
+  {
+    "id": "konditori-lyran",
+    "name": "Konditori Lyran",
+    "type": "cafe",
+    "cuisine": [
+      "Fika",
+      "Bakery",
+      "Lunch"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": null,
+    "value_tier": "mid",
+    "lat": 59.2962,
+    "lng": 17.9492,
+    "address": "Ålgrytevägen 90, Stockholm",
+    "neighborhood": "Mälarhöjden",
+    "distance_km": 7.4,
+    "vibe_tags": [
+      "view",
+      "waterfront",
+      "tower-view",
+      "fika",
+      "konditori",
+      "brunch",
+      "scenic"
+    ],
+    "michelin_dna_score": 0.6,
+    "confidence": "candidate",
+    "inspector_note": null,
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "1867 villa with a climbable tower and stunning Lake Mälaren views",
+      "Own in-house bakery — famous for pastries and shrimp sandwiches",
+      "Short stroll through the woods down to Malhöjden beach",
+      "Classic Swedish fika and afternoon tea"
+    ],
+    "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
+    "source": [
+      "web-search"
+    ],
+    "source_url": "https://thatsup.co.uk/stockholm/cafe/konditori-lyran/",
+    "last_verified": "2026-06-13",
+    "notes": "Admission: craft track. External signal: Thatsup + Visit Stockholm listings, sustained reputation. Craft: own bakery. View: tower + terrace over Mälaren. Café/bakery/lunch pricing — everyday/mid. Queues on busy days. Coords approximate (Ålgrytevägen 90)."
+  },
+  {
+    "id": "restaurang-nook",
+    "name": "Restaurang Nook",
+    "type": "restaurant",
+    "cuisine": [
+      "Modern Cuisine",
+      "French",
+      "Swedish"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": null,
+    "value_tier": "mid",
+    "lat": 59.3168,
+    "lng": 18.07,
+    "address": "Högbergsgatan 62, Södermalm",
+    "neighborhood": "Södermalm",
+    "distance_km": 7.5,
+    "vibe_tags": [
+      "bistro",
+      "neighbourhood",
+      "value",
+      "seasonal",
+      "tasting-menu"
+    ],
+    "michelin_dna_score": 0.65,
+    "confidence": "candidate",
+    "inspector_note": "Beloved Södermalm favourite (orig. 2014) reborn near Mariatorget in the former Plais space. Reasonably-priced seasonal three-course menus (595 kr) plus plenty of snacks; influences from France, Sweden and sometimes Asia, sustainability-minded. Craft track: prized, value-driven multi-course cooking.",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "595 kr three-course menu",
+      "Seasonal, sustainability-minded cooking",
+      "Plenty of snacks"
+    ],
+    "accepts_reservations": null,
+    "added_via": "hunter search",
+    "source": [
+      "BokaBord",
+      "Thatsup",
+      "Besöksliv"
+    ],
+    "source_url": "https://www.bokabord.se/artiklar/sodermalmsfavoriten-nook-ateruppstar",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -2524,19 +2537,56 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "A compact bistro owned by a group of friends, who set up a furniture making business and now use the bistro to showcase their products. Cooking follows a theme which changes every two months – ...",
-    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
-    "highlights": [
-      "Menu theme changes every two months",
-      "Run by a furniture-making collective",
-      "Compact, characterful bistro"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/woodstockholm",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
+    "notes": ""
+  },
+  {
+    "id": "cafe-cuvee",
+    "name": "Café Cuvée",
+    "type": "restaurant",
+    "cuisine": [
+      "French",
+      "Wine bar",
+      "Small plates"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": null,
+    "value_tier": "mid",
+    "lat": 59.3162,
+    "lng": 18.071,
+    "address": "Högbergsgatan 64, Södermalm",
+    "neighborhood": "Södermalm",
+    "distance_km": 7.6,
+    "vibe_tags": [
+      "wine-bar",
+      "cozy",
+      "french",
+      "small-plates",
+      "neighbourhood"
+    ],
+    "michelin_dna_score": 0.6,
+    "confidence": "candidate",
+    "inspector_note": "Relaxed bistro-style wine spot in central Södermalm. Snacks and small shareable dishes (chips with roe dip, tarte flambée, burrata, handmade cavatelli) and great cheese; mostly-French list with reasonably-priced Burgundy and a wine-jukebox by-the-glass concept. Craft track.",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Shareable French small plates and cheese",
+      "Reasonably-priced Burgundy",
+      "Wine-jukebox by-the-glass"
+    ],
+    "accepts_reservations": null,
+    "added_via": "hunter search",
+    "source": [
+      "Star Wine List",
+      "Visit Stockholm"
+    ],
+    "source_url": "https://starwinelist.com/wine-place/cafe-cuvee",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -2559,20 +2609,57 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "Charming in its lack of pretension, this bohemian neighbourhood restaurant has a homely feel. It’s simply furnished and the pared-back cooking has an unfussiness to match. Dishes show technical ...",
-    "why_listed": "Bib Gourmand — Michelin's own good-value badge. This is the gold seed of the whole 'Michelin-adjacent value' idea: great cooking that won't break the bank.",
-    "highlights": [
-      "Charming, unpretentious and homely",
-      "Technically sharp, pared-back cooking",
-      "Bohemian neighbourhood feel",
-      "Bib Gourmand value"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/triton",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
+    "notes": ""
+  },
+  {
+    "id": "bistro-monello",
+    "name": "Bistro Monello",
+    "type": "restaurant",
+    "cuisine": [
+      "French",
+      "Italian",
+      "Bistro"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": null,
+    "value_tier": "mid",
+    "lat": 59.3144,
+    "lng": 18.0772,
+    "address": "Kocksgatan 3, Södermalm",
+    "neighborhood": "Södermalm",
+    "distance_km": 8,
+    "vibe_tags": [
+      "bistro",
+      "lively",
+      "wine",
+      "french-italian",
+      "new-opening"
+    ],
+    "michelin_dna_score": 0.6,
+    "confidence": "candidate",
+    "inspector_note": "Lively classic-style bistro opened Jan 2025 on Kocksgatan. French and Italian flavours meet across small and large dishes: oysters, steak tartare, grilled meat, fresh handmade pasta; comprehensive list with a wine room and crafted classic cocktails. Craft track, new opening.",
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Fresh handmade pasta",
+      "French-Italian small and large plates",
+      "Wine room and classic cocktails"
+    ],
+    "accepts_reservations": null,
+    "added_via": "hunter search",
+    "source": [
+      "Thatsup",
+      "Elle",
+      "BokaBord"
+    ],
+    "source_url": "https://www.bistromonello.se/",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -2595,20 +2682,12 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "Ulla Winbladh was originally built as a steam bakery for the 1897 Stockholm World Fair and is set in charming parkland beside the Skansen open-air museum. Sit on the terrace or in the older, more ...",
-    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
-    "highlights": [
-      "Classic Swedish husmanskost",
-      "Charming parkland setting by Skansen",
-      "Lovely summer terrace",
-      "Historic 1897 building"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/ulla-winbladh",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -2676,20 +2755,12 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "This lively wine bar is a perfect fit for the neighbourhood. Sit at closely set tables or on high stools either up at the bar counter or next to the window, surrounded by paintings and hunting ...",
-    "why_listed": "Bib Gourmand — Michelin's own good-value badge. This is the gold seed of the whole 'Michelin-adjacent value' idea: great cooking that won't break the bank.",
-    "highlights": [
-      "Lively, natural-leaning wine bar",
-      "Budget-friendly Bib Gourmand",
-      "Counter and window stools",
-      "Söder neighbourhood favourite"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/bar-agrikultur",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -2712,19 +2783,12 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "Homely and cosy, there is a wonderful lack of pretension to this French-inspired bistro. Flavourful dishes from the small open kitchen include classical French desserts like blueberry clafoutis ...",
-    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
-    "highlights": [
-      "Homely, unpretentious French bistro",
-      "Classic French desserts (e.g. blueberry clafoutis)",
-      "Budget-priced Michelin listing"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/voisine",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -2791,19 +2855,12 @@
     "michelin_dna_score": 1,
     "confidence": "verified",
     "inspector_note": "This strikingly designed restaurant sits near the beautiful Royal Djurgården. Its stage is the open kitchen, with the chefs often adding their finishing touches tableside. Beautifully composed ...",
-    "why_listed": "Michelin 2-star — a top-end reference for the taste fingerprint. Aspirational, down-weighted for everyday picks because of the price.",
-    "highlights": [
-      "Beautifully composed two-star cooking",
-      "Striking design near Djurgården",
-      "Tableside finishing from the open kitchen"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/aira",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
   },
   {
@@ -2826,19 +2883,58 @@
     "michelin_dna_score": 0.6,
     "confidence": "verified",
     "inspector_note": "If there's such a thing as ‘industrial elegance’, then they’ve found it at this bang on-trend spot in the city’s meat-packing district. Exposed wires and concrete pillars combine with white ...",
-    "why_listed": "On the Michelin Guide's Stockholm selection (listed, not starred) — inspector-vetted cooking without the star-level price. Right in the value sweet spot.",
-    "highlights": [
-      "'Industrial elegance' in the old meat-packing district",
-      "On-trend modern cooking",
-      "Budget-priced for a Michelin listing"
-    ],
     "accepts_reservations": "No",
-    "added_via": "Imported from the Michelin Guide Stockholm selection by the scraper (scripts/michelin_scrape.mjs, via /refresh-michelin).",
     "source": [
       "michelin"
     ],
     "source_url": "https://guide.michelin.com/se/en/stockholm-region/stockholm/restaurant/solen",
-    "last_verified": "2026-06-12",
+    "last_verified": "2026-06-15",
     "notes": ""
+  },
+  {
+    "id": "cafe-blockhusporten",
+    "name": "Café Blockhusporten",
+    "type": "cafe",
+    "cuisine": [
+      "Fika",
+      "Lunch"
+    ],
+    "michelin": "none",
+    "green_star": false,
+    "price": null,
+    "value_tier": "everyday",
+    "lat": 59.327,
+    "lng": 18.1352,
+    "address": "Blockhusudden, Djurgården, Stockholm",
+    "neighborhood": "Blockhusudden (Djurgården)",
+    "distance_km": 10.1,
+    "vibe_tags": [
+      "view",
+      "waterfront",
+      "sea-view",
+      "garden",
+      "fika",
+      "summer",
+      "scenic",
+      "outdoor-seating"
+    ],
+    "michelin_dna_score": 0.42,
+    "confidence": "candidate",
+    "inspector_note": null,
+    "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
+    "highlights": [
+      "Seaside setting at the far end of Blockhusudden — boats and cruise ships passing",
+      "Garden and indoor seating, both with fantastic water views",
+      "Family-run since 1971",
+      "Coffee, pastries, sandwiches and lighter dishes; summer season"
+    ],
+    "accepts_reservations": null,
+    "added_via": "Surfaced by the gem-hunter agent through live web search (/hunt) and saved as a value candidate.",
+    "source": [
+      "web-search"
+    ],
+    "source_url": "https://thatsup.co.uk/stockholm/cafe/caf%C3%A9-blockhusporten/",
+    "last_verified": "2026-06-13",
+    "notes": "Admission: borderline craft / view-keeper. External signal: Thatsup café listing + long family stewardship (since 1971). Craft is modest (classic café fare) — listed primarily for the standout sea view. Summer café (seasonal). Everyday-priced. Coords approximate (Blockhusudden)."
   }
 ]
