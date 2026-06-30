@@ -1,7 +1,7 @@
 # Michelin Fingerprint — "what good looks like"
 
 > Auto-derived from `data/places.json` (20 reference places: stars + Bib Gourmand).
-> Last derived: 2026-06-15. Re-run `node scripts/derive_fingerprint.mjs`.
+> Last derived: 2026-06-30. Re-run `node scripts/derive_fingerprint.mjs`.
 
 ## Purpose
 This is the target the **hunter** searches against. Goal = find places that share this DNA but are
