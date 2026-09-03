@@ -20,7 +20,8 @@
       "fika",
       "quiet",
       "neighbourhood",
-      "bakery"
+      "bakery",
+      "counter"
     ],
     "michelin_dna_score": 0.72,
     "confidence": "candidate",
@@ -38,7 +39,7 @@
     ],
     "source_url": "https://2cupsoftravel.com/best-fika-locations-stockholm-coffee-cafe-guide/",
     "last_verified": "2026-06-12",
-    "notes": ""
+    "notes": " VISITED 2026-06-30 (rating -2): no tables inside, open-kitchen counter only."
   },
   {
     "id": "restaurang-bazaar",
@@ -1490,7 +1491,8 @@
       "chef-driven",
       "craft",
       "fika",
-      "minimalist"
+      "minimalist",
+      "no-high-chairs"
     ],
     "michelin_dna_score": 0.82,
     "confidence": "candidate",
@@ -1509,7 +1511,7 @@
     ],
     "source_url": "https://thatsup.co.uk/stockholm/cafe/socker-sucker/",
     "last_verified": "2026-06-12",
-    "notes": "Classic Swedish bakverk reworked at haute-patisserie level, still bakery-priced. Opened 2022."
+    "notes": "Classic Swedish bakverk reworked at haute-patisserie level, still bakery-priced. Opened 2022. VISITED 2026-09-03 (rating +2): famous pastry chef on site; refined, inventive pastries and very good bread. NOT kid-friendly: no high chairs."
   },
   {
     "id": "rolfs-kok",
@@ -1644,7 +1646,7 @@
       "fika",
       "pared-back"
     ],
-    "michelin_dna_score": 0.85,
+    "michelin_dna_score": 0.45,
     "confidence": "candidate",
     "inspector_note": "Rye-bread bakery-café by two-star chef Mathias Dahlgren and Martin Berg — traditional techniques, organic grain, Swedish smörrebröd and soup lunch. (approx coords)",
     "why_listed": "Michelin-adjacent value candidate — similar DNA to the starred spots, but cheaper and not yet famous. Auto-grown to widen your everyday options.",
@@ -1661,7 +1663,7 @@
     ],
     "source_url": "https://mdghs.se/en/green-rabbit/",
     "last_verified": "2026-06-12",
-    "notes": "Direct chef pedigree from the starred set; near the Rolfs Kök / Bib cluster on Tegnérgatan. Mon-Fri 07:30-15, Sat 09-14."
+    "notes": "Direct chef pedigree from the starred set; near the Rolfs Kök / Bib cluster on Tegnérgatan. Mon-Fri 07:30-15, Sat 09-14. VISITED 2026-09-03 (rating -2): the starred-pedigree chef was not present, pastries made by an intern; small, run-down room; food disappointing. DNA score lowered from 0.85 to reflect actual experience."
   },
   {
     "id": "allegrine",
